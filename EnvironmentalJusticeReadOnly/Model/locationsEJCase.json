@@ -1,0 +1,45 @@
+{
+    "locations": [{
+            "id": 0,
+            "name": "Los Alamos (Manhattan Project)",
+            "latitude": 35.875556,
+            "longitude": -106.324167,
+            "year": "1942",
+            "image": "losal1-1"
+        },
+        {
+            "id": 1,
+            "name": "Delano Grape Strike",
+            "latitude": 35.770725,
+            "longitude": -119.466926,
+            "year": "1965",
+            "image": "delano"
+        },
+        {
+            "id": 2,
+            "name": "Hawkins V. Town of Shaw",
+            "latitude": 33.601685,
+            "longitude": -90.772131,
+            "year": "1971",
+            "image": "hawkinsshaw"
+        },
+        {
+            "id": 3,
+            "name": "Warren County PCB Landfill",
+            "latitude": 36.3523,
+            "longitude": -78.1582,
+            "year": "1982",
+            "image": "WarrenCO"
+        },
+        {
+            "id": 4,
+            "name": "North River Sewage Treatment Plant",
+            "latitude": 40.825535,
+            "longitude": -73.956935,
+            "year": "1985",
+            "image": "northriv-1"
+        }
+
+    ]
+}
+

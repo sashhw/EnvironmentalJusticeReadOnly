@@ -11,7 +11,7 @@ struct ContentView: View {
    
     @State var flipped = false
    
-    let mapView = MapViewTwo()
+//    let mapView = MapViewTwo()
     let usCases = USCases()
     @State var showSignInForm = false
     @State var showSheetView = false
@@ -37,13 +37,14 @@ struct ContentView: View {
             .overlay(
                 Group {
                     Spacer()
-                
                 ejTitle()
-      
+                    .padding(.bottom, 100)
+                   
+//
+     
            
             if !self.flipped {
-           Spacer(minLength: 10)
-            
+         
             
             Text("Info")
                 .kerning(2.0)
@@ -83,7 +84,7 @@ struct ContentView: View {
                     
             NavigationLink(destination: usCases) {
                 
-                Text("U.S. Cases")
+                Text("Cases")
                     .kerning(2.0)
                     .fontWeight(.light)
                     .padding()
@@ -98,10 +99,11 @@ struct ContentView: View {
                     .minimumScaleFactor(0.5)
                     .frame(width: UIScreen.main.bounds.width-20, alignment: .center)
                     }
+           
                     
                   
-            NavigationLink(destination: mapView) {
-                Text("Map View")
+            NavigationLink(destination: MapViewThree()) {
+                Text("Map")
                     .kerning(2.0)
                     .fontWeight(.light)
                     .padding()
@@ -116,7 +118,8 @@ struct ContentView: View {
                     .minimumScaleFactor(0.5)
                     .frame(width: UIScreen.main.bounds.width-20, alignment: .center)
                     }
-            .padding(.bottom, 50)
+            .padding(.bottom, 200.0)
+            
             .navigationBarItems(trailing:
                             Button(action: {
                                 self.showSheetView.toggle()
@@ -124,7 +127,9 @@ struct ContentView: View {
                                 Image(systemName: "info.circle")
                                     .font(Font.system(.title2))
                                     .foregroundColor(.black)
+                                    .padding(.leading)
                                     .opacity(0.5)
+                                    
                             }
                         )
                   
@@ -141,8 +146,12 @@ struct ContentView: View {
            alignment: .center
 ) }
 }
+                       
+                        
+                        
 }
                 }
+                .frame(maxWidth: .infinity)
                 .sheet(isPresented: $showSignInForm) {
 //                    SignInView()
                 }

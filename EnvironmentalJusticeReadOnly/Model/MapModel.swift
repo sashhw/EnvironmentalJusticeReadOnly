@@ -27,8 +27,11 @@ struct JSONData: Decodable {
     var coordinate: CLLocationCoordinate2D {
        CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
      }
+//    init(name: String, coordinate: CLLocationCoordinate2D) {
+//        self.name = name
+//        self.coordinate = coordinate
+//    }
 }
-	
 
 //func readFile() {
 //     if let url = Bundle.main.url(forResource: "locationsEJCase", withExtension: "json"),
@@ -41,5 +44,6 @@ struct JSONData: Decodable {
 //
 //
 //         }
+
 
 

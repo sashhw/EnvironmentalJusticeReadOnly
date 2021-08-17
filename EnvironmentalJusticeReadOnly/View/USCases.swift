@@ -109,7 +109,7 @@ struct DetailView: View {
     @Environment(\.presentationMode) var presentationMode
     @State private var selection = Date()
     let years = [1920...2021]
-    
+    @State var zoomed = false
     
     
     var body: some View {
@@ -128,6 +128,13 @@ struct DetailView: View {
                     .aspectRatio(contentMode: .fill)
                     .cornerRadius(20)
                     .shadow(radius: 10)
+                    .scaleEffect(self.zoomed ? 0.9 : 0.75)
+                   
+                    .onTapGesture {
+                        self.zoomed.toggle()
+                    }
+                    .animation(.spring())
+                 
                 VStack {
                 HStack {
             
@@ -155,7 +162,8 @@ struct DetailView: View {
                 
             Text(caseCellVM.ejCase.info)
                 .multilineTextAlignment(.center)
-
+                .padding(30)
+ 
             }
             .padding()
             .font(.callout)

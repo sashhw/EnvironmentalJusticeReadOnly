@@ -29,7 +29,7 @@ class CaseRepository: ObservableObject {
                     self.cases = querySnapshot.documents.compactMap {
                         document in
                         do {
-                            let x = try document.data(as: Case.self)
+                           let x = try document.data(as: Case.self)
                             return x
                         }  catch {
                                 print(error)
@@ -45,7 +45,9 @@ class CaseRepository: ObservableObject {
     var addedCase = ejCase
             
     addedCase.userId = Auth.auth().currentUser?.uid
-    let _ = try db.collection("cases").addDocument(from: addedCase)
+
+                
+            let _ = try db.collection("cases").addDocument(from: addedCase)
     }
         catch {
             fatalError("Unable to encode task: \(error.localizedDescription)")

@@ -8,11 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		2D75A5411F83D9CE46980348 /* Pods_EnvironmentalJusticeReadOnly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5D5CC5547ADFD642C6AA68 /* Pods_EnvironmentalJusticeReadOnly.framework */; };
+		D916027426B9AD5A0069CE5E /* MapCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916027326B9AD5A0069CE5E /* MapCircle.swift */; };
+		D916027626B9AEB20069CE5E /* PicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916027526B9AEB20069CE5E /* PicView.swift */; };
+		D916027826B9AF380069CE5E /* LosAlMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916027726B9AF380069CE5E /* LosAlMapView.swift */; };
+		D916027A26B9C3920069CE5E /* DelanoPic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916027926B9C3920069CE5E /* DelanoPic.swift */; };
+		D953816726BEF26F001319AC /* DelanoMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953816626BEF26F001319AC /* DelanoMap.swift */; };
+		D953816926BEF582001319AC /* HawkinsMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953816826BEF582001319AC /* HawkinsMap.swift */; };
+		D953816B26BF0170001319AC /* WarrenMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953816A26BF0170001319AC /* WarrenMap.swift */; };
+		D953816D26BF4F74001319AC /* NorthRiverMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953816C26BF4F74001319AC /* NorthRiverMap.swift */; };
 		D98B5840268A3C5D00F11DBE /* locationsEJCase.json in Resources */ = {isa = PBXBuildFile; fileRef = D98B583F268A3C5D00F11DBE /* locationsEJCase.json */; };
 		D98B5842268A3C8300F11DBE /* MapViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98B5841268A3C8300F11DBE /* MapViewViewModel.swift */; };
 		D98B5844268A3D0A00F11DBE /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98B5843268A3D0A00F11DBE /* MapModel.swift */; };
 		D9AC1EC4268B9FBA0080C9F3 /* CiteSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AC1EC3268B9FBA0080C9F3 /* CiteSheetView.swift */; };
-		D9D6CEA32673DEA3004ED84D /* MapViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D6CEA22673DEA3004ED84D /* MapViewTwo.swift */; };
+		D9B21C6626B864CC008B688A /* UIKitMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B21C6526B864CC008B688A /* UIKitMap.swift */; };
+		D9D6CEA32673DEA3004ED84D /* MapSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D6CEA22673DEA3004ED84D /* MapSwiftUI.swift */; };
 		D9F4AD332673C15E001FDE22 /* EnvironmentalJusticeReadOnlyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F4AD322673C15E001FDE22 /* EnvironmentalJusticeReadOnlyApp.swift */; };
 		D9F4AD352673C15E001FDE22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F4AD342673C15E001FDE22 /* ContentView.swift */; };
 		D9F4AD372673C161001FDE22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9F4AD362673C161001FDE22 /* Assets.xcassets */; };
@@ -31,11 +40,22 @@
 		A87A148139A626A88F58B7F5 /* Pods-EnvironmentalJusticeReadOnly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnvironmentalJusticeReadOnly.release.xcconfig"; path = "Target Support Files/Pods-EnvironmentalJusticeReadOnly/Pods-EnvironmentalJusticeReadOnly.release.xcconfig"; sourceTree = "<group>"; };
 		AE96EAE5320F922E46FCF882 /* Pods-EnvironmentalJusticeReadOnly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnvironmentalJusticeReadOnly.debug.xcconfig"; path = "Target Support Files/Pods-EnvironmentalJusticeReadOnly/Pods-EnvironmentalJusticeReadOnly.debug.xcconfig"; sourceTree = "<group>"; };
 		CB5D5CC5547ADFD642C6AA68 /* Pods_EnvironmentalJusticeReadOnly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnvironmentalJusticeReadOnly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D916027326B9AD5A0069CE5E /* MapCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCircle.swift; sourceTree = "<group>"; };
+		D916027526B9AEB20069CE5E /* PicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicView.swift; sourceTree = "<group>"; };
+		D916027726B9AF380069CE5E /* LosAlMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LosAlMapView.swift; sourceTree = "<group>"; };
+		D916027926B9C3920069CE5E /* DelanoPic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelanoPic.swift; sourceTree = "<group>"; };
+		D93E18E7269F802C004AB4D9 /* EnvironmentalJusticeReadOnlyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentalJusticeReadOnlyTests.swift; sourceTree = "<group>"; };
+		D93E18E9269F802C004AB4D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D953816626BEF26F001319AC /* DelanoMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelanoMap.swift; sourceTree = "<group>"; };
+		D953816826BEF582001319AC /* HawkinsMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HawkinsMap.swift; sourceTree = "<group>"; };
+		D953816A26BF0170001319AC /* WarrenMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarrenMap.swift; sourceTree = "<group>"; };
+		D953816C26BF4F74001319AC /* NorthRiverMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthRiverMap.swift; sourceTree = "<group>"; };
 		D98B583F268A3C5D00F11DBE /* locationsEJCase.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = locationsEJCase.json; sourceTree = "<group>"; };
 		D98B5841268A3C8300F11DBE /* MapViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewViewModel.swift; sourceTree = "<group>"; };
 		D98B5843268A3D0A00F11DBE /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
 		D9AC1EC3268B9FBA0080C9F3 /* CiteSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiteSheetView.swift; sourceTree = "<group>"; };
-		D9D6CEA22673DEA3004ED84D /* MapViewTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewTwo.swift; sourceTree = "<group>"; };
+		D9B21C6526B864CC008B688A /* UIKitMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitMap.swift; sourceTree = "<group>"; };
+		D9D6CEA22673DEA3004ED84D /* MapSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSwiftUI.swift; sourceTree = "<group>"; };
 		D9F4AD2F2673C15E001FDE22 /* EnvironmentalJusticeReadOnly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnvironmentalJusticeReadOnly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9F4AD322673C15E001FDE22 /* EnvironmentalJusticeReadOnlyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentalJusticeReadOnlyApp.swift; sourceTree = "<group>"; };
 		D9F4AD342673C15E001FDE22 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,10 +101,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D93E18E6269F802C004AB4D9 /* EnvironmentalJusticeReadOnlyTests */ = {
+			isa = PBXGroup;
+			children = (
+				D93E18E7269F802C004AB4D9 /* EnvironmentalJusticeReadOnlyTests.swift */,
+				D93E18E9269F802C004AB4D9 /* Info.plist */,
+			);
+			path = EnvironmentalJusticeReadOnlyTests;
+			sourceTree = "<group>";
+		};
 		D9F4AD262673C15E001FDE22 = {
 			isa = PBXGroup;
 			children = (
 				D9F4AD312673C15E001FDE22 /* EnvironmentalJusticeReadOnly */,
+				D93E18E6269F802C004AB4D9 /* EnvironmentalJusticeReadOnlyTests */,
 				D9F4AD302673C15E001FDE22 /* Products */,
 				BC32DF171D2917504C824F6C /* Pods */,
 				BFEC32E5C1D102AD9FA0D3C7 /* Frameworks */,
@@ -136,7 +166,16 @@
 			children = (
 				D9F4AD342673C15E001FDE22 /* ContentView.swift */,
 				D9F4AD4F2673D34B001FDE22 /* USCases.swift */,
-				D9D6CEA22673DEA3004ED84D /* MapViewTwo.swift */,
+				D9D6CEA22673DEA3004ED84D /* MapSwiftUI.swift */,
+				D916027326B9AD5A0069CE5E /* MapCircle.swift */,
+				D916027526B9AEB20069CE5E /* PicView.swift */,
+				D916027926B9C3920069CE5E /* DelanoPic.swift */,
+				D953816626BEF26F001319AC /* DelanoMap.swift */,
+				D953816C26BF4F74001319AC /* NorthRiverMap.swift */,
+				D953816826BEF582001319AC /* HawkinsMap.swift */,
+				D953816A26BF0170001319AC /* WarrenMap.swift */,
+				D916027726B9AF380069CE5E /* LosAlMapView.swift */,
+				D9B21C6526B864CC008B688A /* UIKitMap.swift */,
 				D9AC1EC3268B9FBA0080C9F3 /* CiteSheetView.swift */,
 				D9F4AD532673D4A8001FDE22 /* ejTitleTwo.swift */,
 			);
@@ -207,6 +246,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-419",
 			);
 			mainGroup = D9F4AD262673C15E001FDE22;
 			productRefGroup = D9F4AD302673C15E001FDE22 /* Products */;
@@ -279,19 +319,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D953816726BEF26F001319AC /* DelanoMap.swift in Sources */,
 				D9F4AD502673D34B001FDE22 /* USCases.swift in Sources */,
 				D9F4AD522673D478001FDE22 /* ejDefCitations.swift in Sources */,
 				D98B5842268A3C8300F11DBE /* MapViewViewModel.swift in Sources */,
 				D9F4AD352673C15E001FDE22 /* ContentView.swift in Sources */,
 				D98B5844268A3D0A00F11DBE /* MapModel.swift in Sources */,
+				D916027426B9AD5A0069CE5E /* MapCircle.swift in Sources */,
+				D9B21C6626B864CC008B688A /* UIKitMap.swift in Sources */,
 				D9F4AD332673C15E001FDE22 /* EnvironmentalJusticeReadOnlyApp.swift in Sources */,
 				D9F4AD542673D4A8001FDE22 /* ejTitleTwo.swift in Sources */,
+				D916027826B9AF380069CE5E /* LosAlMapView.swift in Sources */,
 				D9F4AD4E2673C7CE001FDE22 /* CaseCellViewModel.swift in Sources */,
+				D953816B26BF0170001319AC /* WarrenMap.swift in Sources */,
+				D916027A26B9C3920069CE5E /* DelanoPic.swift in Sources */,
 				D9AC1EC4268B9FBA0080C9F3 /* CiteSheetView.swift in Sources */,
+				D953816926BEF582001319AC /* HawkinsMap.swift in Sources */,
 				D9F4AD4C2673C7C5001FDE22 /* CaseListViewModel.swift in Sources */,
 				D9F4AD4A2673C663001FDE22 /* CasesTwo.swift in Sources */,
-				D9D6CEA32673DEA3004ED84D /* MapViewTwo.swift in Sources */,
+				D9D6CEA32673DEA3004ED84D /* MapSwiftUI.swift in Sources */,
+				D953816D26BF4F74001319AC /* NorthRiverMap.swift in Sources */,
 				D9F4AD482673C640001FDE22 /* CaseRepositoryTwo.swift in Sources */,
+				D916027626B9AEB20069CE5E /* PicView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +351,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -349,6 +399,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/Pods/Firebase/CoreOnly/Sources";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -363,6 +414,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -404,6 +456,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/Pods/Firebase/CoreOnly/Sources";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -421,9 +474,34 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"EnvironmentalJusticeReadOnly/Preview Content\"";
 				DEVELOPMENT_TEAM = 5C5CMQR2CZ;
 				ENABLE_PREVIEWS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BoringSSL-GRPC/openssl_grpc.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth/FirebaseAuth.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore/FirebaseCore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/FirebaseFirestore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestoreSwift/FirebaseFirestoreSwift.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstallations/FirebaseInstallations.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GeoFire/GeoFire.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport/GoogleDataTransport.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities/GoogleUtilities.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC/FBLPromises.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/abseil/absl.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++/grpcpp.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-Core/grpc.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/leveldb-library/leveldb.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb/nanopb.framework/Headers\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"$(inherited)",
+					"\"${PODS_TARGET_SRCROOT}/Sources/FBLPromises/include\"",
+				);
 				INFOPLIST_FILE = EnvironmentalJusticeReadOnly/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -433,7 +511,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sasha.EnvironmentalJusticeReadOnly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -444,6 +522,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"EnvironmentalJusticeReadOnly/Preview Content\"";
 				DEVELOPMENT_TEAM = 5C5CMQR2CZ;
 				ENABLE_PREVIEWS = YES;
@@ -456,7 +535,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sasha.EnvironmentalJusticeReadOnly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -13,12 +13,14 @@ import FirebaseFirestoreSwift
 struct Case: Identifiable, Codable
 {
   @DocumentID var id: String?
-    var name: String
-    var year: Int
-    var info: String
-    var photo: String
-    var userId: String?
-    var location: String
+    var name: String = ""
+    var year: Int = 0
+    var info: String = ""
+    var photo: String = ""
+    var userId: String? = ""
+    var location: String = ""
+    
+   
 //    var coordinate: CLLocationCoordinate2D
 //    var latitude: Double
 //    var longitude: Double

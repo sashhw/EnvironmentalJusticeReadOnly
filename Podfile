@@ -12,5 +12,6 @@ target 'EnvironmentalJusticeReadOnly' do
   pod 'Firebase/Firestore'
   pod 'FirebaseFirestoreSwift'
   pod 'GeoFire/Utils'
-
+  
+  
 end

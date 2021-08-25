@@ -121,13 +121,13 @@ struct MapViewThree: View {
                             .aspectRatio(contentMode: .fill)
 
                             .padding(.bottom, -130)
-                            .scaleEffect(self.zoomed ? 1.1 : 1.0)
+                            .scaleEffect(self.zoomed ? 1.0 : 0.8)
                           
                            
                             .onTapGesture {
                                 self.zoomed.toggle()
                             }
-                          
+                            .animation(.easeInOut(duration: 0.5))
                     
                         Spacer()
                       
@@ -171,12 +171,12 @@ struct MapViewThree: View {
                             .aspectRatio(contentMode: .fill)
                        
                             .padding(.bottom, -130)
-                            .scaleEffect(self.zoomed ? 1.1 : 1.0)
+                            .scaleEffect(self.zoomed ? 1.0 : 0.8)
                            
                             .onTapGesture {
                                 self.zoomed.toggle()
                             }
-//
+                            .animation(.easeInOut(duration: 0.5))
  
                         Spacer()
                     }
@@ -210,13 +210,13 @@ struct MapViewThree: View {
                             .aspectRatio(contentMode: .fill)
 //                            .offset(y: -130)
                             .padding(.bottom, -130)
-                            .scaleEffect(self.zoomed ? 1.1 : 1.0)
+                            .scaleEffect(self.zoomed ? 1.0 : 0.8)
                            
                             .onTapGesture {
                                 self.zoomed.toggle()
                             }
                        
-                        
+                            .animation(.easeInOut(duration: 0.5))
 
                 Spacer()
             }
@@ -247,11 +247,12 @@ struct MapViewThree: View {
                             .aspectRatio(contentMode: .fill)
 //                            .offset(y: -130)
                             .padding(.bottom, -130)
-                            .scaleEffect(self.zoomed ? 1.1 : 1.0)
+                            .scaleEffect(self.zoomed ? 1.0 : 0.8)
                            
                             .onTapGesture {
                                 self.zoomed.toggle()
                             }
+                            .animation(.easeInOut(duration: 0.5))
                           
 
 
@@ -284,11 +285,12 @@ struct MapViewThree: View {
                             .aspectRatio(contentMode: .fill)
 
                             .padding(.bottom, -130)
-                            .scaleEffect(self.zoomed ? 1.1 : 1.0)
+                            .scaleEffect(self.zoomed ? 1.0 : 0.8)
                            
                             .onTapGesture {
                                 self.zoomed.toggle()
                             }
+                            .animation(.easeInOut(duration: 0.5))
                          
                         
 

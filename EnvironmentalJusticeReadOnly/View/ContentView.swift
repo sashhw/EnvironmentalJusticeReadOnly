@@ -81,6 +81,23 @@ struct ContentView: View {
                 .frame(width: UIScreen.main.bounds.width-20, alignment: .center)
             
     }
+                    NavigationLink(destination: CardView(card: Card(word: "", definition: ""))) {
+                        
+                        Text("Terms")
+                            .kerning(2.0)
+                            .fontWeight(.light)
+                            .padding()
+                            .font(.system(.headline))
+                            .foregroundColor(.black)
+                            .multilineTextAlignment(.center)
+                            .scaleEffect(0.9)
+                            .background(Color.white)
+                            .cornerRadius(15)
+                            .opacity(0.7)
+                            .padding(.horizontal, 30.0)
+                            .minimumScaleFactor(0.5)
+                            .frame(width: UIScreen.main.bounds.width-20, alignment: .center)
+                            }
                     
             NavigationLink(destination: usCases) {
                 

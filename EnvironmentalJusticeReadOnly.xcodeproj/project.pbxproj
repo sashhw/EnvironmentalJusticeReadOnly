@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2D75A5411F83D9CE46980348 /* Pods_EnvironmentalJusticeReadOnly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5D5CC5547ADFD642C6AA68 /* Pods_EnvironmentalJusticeReadOnly.framework */; };
 		D916027426B9AD5A0069CE5E /* MapCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916027326B9AD5A0069CE5E /* MapCircle.swift */; };
-		D916027626B9AEB20069CE5E /* PicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916027526B9AEB20069CE5E /* PicView.swift */; };
+		D916027626B9AEB20069CE5E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916027526B9AEB20069CE5E /* CardView.swift */; };
 		D916027826B9AF380069CE5E /* LosAlMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916027726B9AF380069CE5E /* LosAlMapView.swift */; };
 		D916027A26B9C3920069CE5E /* DelanoPic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916027926B9C3920069CE5E /* DelanoPic.swift */; };
 		D953816726BEF26F001319AC /* DelanoMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953816626BEF26F001319AC /* DelanoMap.swift */; };
@@ -19,6 +19,8 @@
 		D98B5840268A3C5D00F11DBE /* locationsEJCase.json in Resources */ = {isa = PBXBuildFile; fileRef = D98B583F268A3C5D00F11DBE /* locationsEJCase.json */; };
 		D98B5842268A3C8300F11DBE /* MapViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98B5841268A3C8300F11DBE /* MapViewViewModel.swift */; };
 		D98B5844268A3D0A00F11DBE /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98B5843268A3D0A00F11DBE /* MapModel.swift */; };
+		D99B559726D409EA00773CBE /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99B559626D409EA00773CBE /* CardModel.swift */; };
+		D99B559926D4133C00773CBE /* MainCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99B559826D4133C00773CBE /* MainCardView.swift */; };
 		D9AC1EC4268B9FBA0080C9F3 /* CiteSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AC1EC3268B9FBA0080C9F3 /* CiteSheetView.swift */; };
 		D9B21C6626B864CC008B688A /* UIKitMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B21C6526B864CC008B688A /* UIKitMap.swift */; };
 		D9D6CEA32673DEA3004ED84D /* MapSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D6CEA22673DEA3004ED84D /* MapSwiftUI.swift */; };
@@ -41,7 +43,7 @@
 		AE96EAE5320F922E46FCF882 /* Pods-EnvironmentalJusticeReadOnly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnvironmentalJusticeReadOnly.debug.xcconfig"; path = "Target Support Files/Pods-EnvironmentalJusticeReadOnly/Pods-EnvironmentalJusticeReadOnly.debug.xcconfig"; sourceTree = "<group>"; };
 		CB5D5CC5547ADFD642C6AA68 /* Pods_EnvironmentalJusticeReadOnly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnvironmentalJusticeReadOnly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D916027326B9AD5A0069CE5E /* MapCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCircle.swift; sourceTree = "<group>"; };
-		D916027526B9AEB20069CE5E /* PicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicView.swift; sourceTree = "<group>"; };
+		D916027526B9AEB20069CE5E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		D916027726B9AF380069CE5E /* LosAlMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LosAlMapView.swift; sourceTree = "<group>"; };
 		D916027926B9C3920069CE5E /* DelanoPic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelanoPic.swift; sourceTree = "<group>"; };
 		D93E18E7269F802C004AB4D9 /* EnvironmentalJusticeReadOnlyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentalJusticeReadOnlyTests.swift; sourceTree = "<group>"; };
@@ -53,6 +55,8 @@
 		D98B583F268A3C5D00F11DBE /* locationsEJCase.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = locationsEJCase.json; sourceTree = "<group>"; };
 		D98B5841268A3C8300F11DBE /* MapViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewViewModel.swift; sourceTree = "<group>"; };
 		D98B5843268A3D0A00F11DBE /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
+		D99B559626D409EA00773CBE /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardModel.swift; path = EnvironmentalJusticeReadOnly/Model/CardModel.swift; sourceTree = SOURCE_ROOT; };
+		D99B559826D4133C00773CBE /* MainCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCardView.swift; sourceTree = "<group>"; };
 		D9AC1EC3268B9FBA0080C9F3 /* CiteSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiteSheetView.swift; sourceTree = "<group>"; };
 		D9B21C6526B864CC008B688A /* UIKitMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitMap.swift; sourceTree = "<group>"; };
 		D9D6CEA22673DEA3004ED84D /* MapSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSwiftUI.swift; sourceTree = "<group>"; };
@@ -168,7 +172,8 @@
 				D9F4AD4F2673D34B001FDE22 /* USCases.swift */,
 				D9D6CEA22673DEA3004ED84D /* MapSwiftUI.swift */,
 				D916027326B9AD5A0069CE5E /* MapCircle.swift */,
-				D916027526B9AEB20069CE5E /* PicView.swift */,
+				D916027526B9AEB20069CE5E /* CardView.swift */,
+				D99B559826D4133C00773CBE /* MainCardView.swift */,
 				D916027926B9C3920069CE5E /* DelanoPic.swift */,
 				D953816626BEF26F001319AC /* DelanoMap.swift */,
 				D953816C26BF4F74001319AC /* NorthRiverMap.swift */,
@@ -198,6 +203,7 @@
 				D9F4AD492673C663001FDE22 /* CasesTwo.swift */,
 				D98B5843268A3D0A00F11DBE /* MapModel.swift */,
 				D98B583F268A3C5D00F11DBE /* locationsEJCase.json */,
+				D99B559626D409EA00773CBE /* CardModel.swift */,
 				D9F4AD512673D478001FDE22 /* ejDefCitations.swift */,
 			);
 			path = Model;
@@ -326,11 +332,13 @@
 				D9F4AD352673C15E001FDE22 /* ContentView.swift in Sources */,
 				D98B5844268A3D0A00F11DBE /* MapModel.swift in Sources */,
 				D916027426B9AD5A0069CE5E /* MapCircle.swift in Sources */,
+				D99B559926D4133C00773CBE /* MainCardView.swift in Sources */,
 				D9B21C6626B864CC008B688A /* UIKitMap.swift in Sources */,
 				D9F4AD332673C15E001FDE22 /* EnvironmentalJusticeReadOnlyApp.swift in Sources */,
 				D9F4AD542673D4A8001FDE22 /* ejTitleTwo.swift in Sources */,
 				D916027826B9AF380069CE5E /* LosAlMapView.swift in Sources */,
 				D9F4AD4E2673C7CE001FDE22 /* CaseCellViewModel.swift in Sources */,
+				D99B559726D409EA00773CBE /* CardModel.swift in Sources */,
 				D953816B26BF0170001319AC /* WarrenMap.swift in Sources */,
 				D916027A26B9C3920069CE5E /* DelanoPic.swift in Sources */,
 				D9AC1EC4268B9FBA0080C9F3 /* CiteSheetView.swift in Sources */,
@@ -340,7 +348,7 @@
 				D9D6CEA32673DEA3004ED84D /* MapSwiftUI.swift in Sources */,
 				D953816D26BF4F74001319AC /* NorthRiverMap.swift in Sources */,
 				D9F4AD482673C640001FDE22 /* CaseRepositoryTwo.swift in Sources */,
-				D916027626B9AEB20069CE5E /* PicView.swift in Sources */,
+				D916027626B9AEB20069CE5E /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,7 +482,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"EnvironmentalJusticeReadOnly/Preview Content\"";
 				DEVELOPMENT_TEAM = 5C5CMQR2CZ;
 				ENABLE_PREVIEWS = YES;
@@ -522,7 +530,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"EnvironmentalJusticeReadOnly/Preview Content\"";
 				DEVELOPMENT_TEAM = 5C5CMQR2CZ;
 				ENABLE_PREVIEWS = YES;

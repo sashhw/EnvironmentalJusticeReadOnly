@@ -10,18 +10,18 @@ import SwiftUI
 struct CiteSheetView: View {
     var body: some View {
         ScrollView {
-        VStack {
-          
-            Text("Citations")
-                .font(.title2)
-                .padding()
-            Text(citations)
-                .font(.caption)
+            VStack {
+                Text("Citations")
+                    .font(.title2)
+                    .padding()
+                Text(citations)
+                    .font(.caption)
+            }
+            .padding()
         }
-        .padding()
     }
 }
-}
+
 struct CiteSheetView_Previews: PreviewProvider {
     static var previews: some View {
         CiteSheetView()

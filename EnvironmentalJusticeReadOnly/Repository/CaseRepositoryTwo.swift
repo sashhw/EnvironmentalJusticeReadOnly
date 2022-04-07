@@ -12,7 +12,7 @@ import Firebase
 
 class CaseRepository: ObservableObject {
     let db = Firestore.firestore()
-   
+    
     @Published var cases = [Case]()
     
     init() {
@@ -20,7 +20,7 @@ class CaseRepository: ObservableObject {
     }
     
     func loadData() {
-       var userId = Auth.auth().currentUser?.uid
+        var userId = Auth.auth().currentUser?.uid
         
         db.collection("cases")
             .order(by: "year")
@@ -29,40 +29,39 @@ class CaseRepository: ObservableObject {
                     self.cases = querySnapshot.documents.compactMap {
                         document in
                         do {
-                           let x = try document.data(as: Case.self)
+                            let x = try document.data(as: Case.self)
                             return x
                         }  catch {
-                                print(error)
-                            }
-                            return nil
+                            print(error)
                         }
+                        return nil
                     }
                 }
             }
+    }
     
     func addCase(_ ejCase: Case) {
         do {
-    var addedCase = ejCase
+            var addedCase = ejCase
             
-    addedCase.userId = Auth.auth().currentUser?.uid
-
-                
+            addedCase.userId = Auth.auth().currentUser?.uid
+            
             let _ = try db.collection("cases").addDocument(from: addedCase)
-    }
+        }
         catch {
             fatalError("Unable to encode task: \(error.localizedDescription)")
         }
-}
+    }
     func updateCase(_ ejCase: Case) {
         if let caseID = ejCase.id {
             do {
                 try db.collection("cases").document(caseID).setData(from: ejCase)
-        }
+            }
             catch {
                 fatalError("Unable to encode task: \(error.localizedDescription)")
             }
+        }
     }
 }
-    }
 
 

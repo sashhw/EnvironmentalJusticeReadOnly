@@ -25,7 +25,6 @@ class CaseCellViewModel: ObservableObject, Identifiable {
             }
             .assign(to: \.id, on: self)
             .store(in: &cancellables)
-        
         $ejCase
             .dropFirst()
             .debounce(for: 0.8, scheduler: RunLoop.main)
@@ -33,6 +32,6 @@ class CaseCellViewModel: ObservableObject, Identifiable {
                 self.caseRepository.updateCase(ejCase)
             }
             .store(in: &cancellables)
-}
+    }
 }
 

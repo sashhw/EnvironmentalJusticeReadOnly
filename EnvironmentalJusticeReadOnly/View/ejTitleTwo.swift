@@ -8,12 +8,10 @@
 import SwiftUI
 
 struct ejTitle: View {
-    
-    
     var body: some View {
         Text("Environmental Justice")
             .fontWeight(.light)
-        .padding()
+            .padding()
             .font(.system(.title))
             .foregroundColor(.black)
             .multilineTextAlignment(.center)
@@ -21,7 +19,6 @@ struct ejTitle: View {
             .background(Color.white)
             .cornerRadius(15)
             .opacity(0.7)
-//            .padding(.top, -140.0)
             .minimumScaleFactor(0.5)
             .frame(width: UIScreen.main.bounds.width-20, alignment: .center)
     }

@@ -25,7 +25,6 @@ class CaseListViewModel: ObservableObject {
             .assign(to: \.caseCellViewModels, on: self)
             .store(in: &cancellables)
     }
-    
     func addCase(ejCase: Case) {
         caseRepository.addCase(ejCase)
     }

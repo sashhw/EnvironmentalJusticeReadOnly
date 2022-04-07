@@ -9,59 +9,34 @@ import Firebase
 
 struct USCases: View {
     
-  @ObservedObject var caseListVM = CaseListViewModel()
-  let caseRepository = CaseRepository()
-  @State var presentAddNewItem = false
-    
-   @State private var showingSheet = false
-   
+    @ObservedObject var caseListVM = CaseListViewModel()
+    let caseRepository = CaseRepository()
+    @State var presentAddNewItem = false
+    @State private var showingSheet = false
     
     var body: some View {
-        
-        
-
-            VStack(alignment: .leading) {
-                
-            
+        VStack(alignment: .leading) {
             List {
-                
                 ForEach(caseListVM.caseCellViewModels) { caseCellVM in
                     HStack {
-                    
                         Image(caseCellVM.ejCase.photo)
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width: 70, height: 85)
                             .cornerRadius(20)
-                    CaseCell(caseCellVM: caseCellVM)
+                        CaseCell(caseCellVM: caseCellVM)
+                    }
                 }
-                    
-              
-                }
-                
-               
-                    
-                }
-
-    }
-            
-               
-                    
-            
+            }
         }
     }
-          
-   
+}
 
-    
-        
-    
 struct USCases_Previews: PreviewProvider {
     static var previews: some View {
         USCases()
     }
 }
-
 
 struct CaseCell: View {
     @ObservedObject var caseCellVM: CaseCellViewModel
@@ -69,37 +44,29 @@ struct CaseCell: View {
     @State var ejCase: String = ""
     
     var body: some View {
-
         HStack {
-        
-        
-        HStack {
-           Spacer()
-            Text(caseCellVM.ejCase.name)
-                .lineLimit(3)
-                .minimumScaleFactor(0.7)
-                .multilineTextAlignment(.center)
+            HStack {
                 
-               
-        Spacer()
-            
+                Spacer()
+                
+                Text(caseCellVM.ejCase.name)
+                    .lineLimit(3)
+                    .minimumScaleFactor(0.7)
+                    .multilineTextAlignment(.center)
+                
+                Spacer()
+                
                 NavigationLink(destination: DetailView(caseCellVM: caseCellVM)) {
                     Text("")
-                        
-    }
-        }
-}
-        }
-}
-                
                     
-   
-
-
-
+                }
+            }
+        }
+    }
+}
 
 struct DetailView: View {
-   
+    
     @ObservedObject var caseCellVM = CaseCellViewModel(ejCase: Case(name: "", year: 0, info: "", photo: "", location: ""))
     var onCommit: (Case) -> (Void) = { _ in }
     @State var ejCase: String = ""
@@ -111,9 +78,8 @@ struct DetailView: View {
     let years = [1920...2021]
     @State var zoomed = false
     
-    
     var body: some View {
-    
+        
         ScrollView {
             VStack {
                 Text(caseCellVM.ejCase.name)
@@ -129,47 +95,34 @@ struct DetailView: View {
                     .cornerRadius(20)
                     .shadow(radius: 10)
                     .scaleEffect(self.zoomed ? 0.9 : 0.75)
-                   
                     .onTapGesture {
                         self.zoomed.toggle()
                     }
                     .animation(.spring())
-                 
+                
                 VStack {
+                    HStack {
+                        let value = String(caseCellVM.ejCase.year)
+                        Text(value)
+                            .font(.body)
+                            .fontWeight(.semibold)
+                    }
+                    HStack {
+                        Text(caseCellVM.ejCase.location)
+                            .font(.body)
+                            .fontWeight(.light)
+                            .italic()
+                    }
+                }
                 HStack {
-            
-                    let value = String(caseCellVM.ejCase.year)
-            Text(value)
-                .font(.body)
-                .fontWeight(.semibold)
-                    
-            
-                    
-                    
+                    Text(caseCellVM.ejCase.info)
+                        .multilineTextAlignment(.center)
+                        .padding(30)
                 }
-            
-            HStack {
-           
-            Text(caseCellVM.ejCase.location)
-                .font(.body)
-                .fontWeight(.light)
-                .italic()
-                
+                .padding()
+                .font(.callout)
             }
-                }
-            HStack {
-           
-                
-            Text(caseCellVM.ejCase.info)
-                .multilineTextAlignment(.center)
-                .padding(30)
- 
-            }
-            .padding()
-            .font(.callout)
-            }
-         
+        }
+    }
 }
-}
-}
-        
+

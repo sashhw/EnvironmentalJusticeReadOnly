@@ -29,7 +29,6 @@ struct CardView: View {
         "reparation": reparation
     ]
     let card: Card
-    var removal: (() -> Void)? = nil
     @State private var isShowingAnswer = false
     @State private var offset = CGSize.zero
     @State var flashcardRotation = 0.0
@@ -49,7 +48,6 @@ struct CardView: View {
                 
                 ScrollView(.horizontal, showsIndicators: true) {
                     HStack {
-                        
                         ForEach(keys.indices) {index in
                             
                             ZStack {

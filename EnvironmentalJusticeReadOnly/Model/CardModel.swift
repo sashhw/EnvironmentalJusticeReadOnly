@@ -7,12 +7,10 @@
 
 import Foundation
 
-struct Card {
+struct Card: Identifiable {
     var word: String
     var definition: String
-    static var example: Card {
-        Card(word: "redlining", definition: redlining)
-    }
+    var id = UUID()
 }
 
 

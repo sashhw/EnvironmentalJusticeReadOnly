@@ -19,6 +19,7 @@
 		D96E428F27FF340D001DFC84 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D96E428E27FF340D001DFC84 /* FirebaseAuth */; };
 		D96E429127FF340D001DFC84 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D96E429027FF340D001DFC84 /* FirebaseFirestore */; };
 		D96E429327FF340D001DFC84 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = D96E429227FF340D001DFC84 /* FirebaseFirestoreSwift-Beta */; };
+		D97E6EBE2800DF6100AD1CFC /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97E6EBD2800DF6100AD1CFC /* File.swift */; };
 		D98B5840268A3C5D00F11DBE /* locationsEJCase.json in Resources */ = {isa = PBXBuildFile; fileRef = D98B583F268A3C5D00F11DBE /* locationsEJCase.json */; };
 		D98B5844268A3D0A00F11DBE /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98B5843268A3D0A00F11DBE /* MapModel.swift */; };
 		D99B559726D409EA00773CBE /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99B559626D409EA00773CBE /* CardModel.swift */; };
@@ -48,6 +49,7 @@
 		D953816826BEF582001319AC /* HawkinsMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HawkinsMap.swift; sourceTree = "<group>"; };
 		D953816A26BF0170001319AC /* WarrenMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarrenMap.swift; sourceTree = "<group>"; };
 		D953816C26BF4F74001319AC /* NorthRiverMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthRiverMap.swift; sourceTree = "<group>"; };
+		D97E6EBD2800DF6100AD1CFC /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		D98B583F268A3C5D00F11DBE /* locationsEJCase.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = locationsEJCase.json; sourceTree = "<group>"; };
 		D98B5843268A3D0A00F11DBE /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
 		D99B559626D409EA00773CBE /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardModel.swift; path = EnvironmentalJusticeReadOnly/Model/CardModel.swift; sourceTree = SOURCE_ROOT; };
@@ -95,6 +97,7 @@
 		D9F4AD262673C15E001FDE22 = {
 			isa = PBXGroup;
 			children = (
+				D97E6EBD2800DF6100AD1CFC /* File.swift */,
 				D9F4AD312673C15E001FDE22 /* EnvironmentalJusticeReadOnly */,
 				D93E18E6269F802C004AB4D9 /* EnvironmentalJusticeReadOnlyTests */,
 				D9F4AD302673C15E001FDE22 /* Products */,
@@ -278,6 +281,7 @@
 				D9AC1EC4268B9FBA0080C9F3 /* CiteSheetView.swift in Sources */,
 				D953816926BEF582001319AC /* HawkinsMap.swift in Sources */,
 				D9F4AD4C2673C7C5001FDE22 /* CaseListViewModel.swift in Sources */,
+				D97E6EBE2800DF6100AD1CFC /* File.swift in Sources */,
 				D9F4AD4A2673C663001FDE22 /* CasesTwo.swift in Sources */,
 				D953816D26BF4F74001319AC /* NorthRiverMap.swift in Sources */,
 				D9F4AD482673C640001FDE22 /* CaseRepositoryTwo.swift in Sources */,

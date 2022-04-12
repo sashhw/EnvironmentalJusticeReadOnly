@@ -95,6 +95,7 @@
 		D9F4AD262673C15E001FDE22 = {
 			isa = PBXGroup;
 			children = (
+				D97E6EBD2800DF6100AD1CFC /* File.swift */,
 				D9F4AD312673C15E001FDE22 /* EnvironmentalJusticeReadOnly */,
 				D93E18E6269F802C004AB4D9 /* EnvironmentalJusticeReadOnlyTests */,
 				D9F4AD302673C15E001FDE22 /* Products */,
@@ -278,6 +279,7 @@
 				D9AC1EC4268B9FBA0080C9F3 /* CiteSheetView.swift in Sources */,
 				D953816926BEF582001319AC /* HawkinsMap.swift in Sources */,
 				D9F4AD4C2673C7C5001FDE22 /* CaseListViewModel.swift in Sources */,
+				D97E6EBE2800DF6100AD1CFC /* File.swift in Sources */,
 				D9F4AD4A2673C663001FDE22 /* CasesTwo.swift in Sources */,
 				D953816D26BF4F74001319AC /* NorthRiverMap.swift in Sources */,
 				D9F4AD482673C640001FDE22 /* CaseRepositoryTwo.swift in Sources */,

@@ -81,12 +81,11 @@ struct ContentView: View {
                                                 .cornerRadius(15)
                                                 .padding(.top, 450)
                                                 .padding(.leading, 200)
-//                                                .padding(50)
                                         }
                                     }
                                 }
                                 
-                                NavigationLink(destination: CardView(card: Card(word: "", definition: ""))) {
+                                NavigationLink(destination: CardScrollView(cards: .init())) {
                                     Text("Terms")
                                         .kerning(2.0)
                                         .fontWeight(.light)

@@ -85,7 +85,7 @@ struct ContentView: View {
                                     }
                                 }
                                 
-                                NavigationLink(destination: CardScrollView(cards: .init())) {
+                                NavigationLink(destination: CardScrollView()) {
                                     Text("Terms")
                                         .kerning(2.0)
                                         .fontWeight(.light)

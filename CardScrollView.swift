@@ -15,9 +15,9 @@ struct CardScrollView: View {
 
     let screenRect = UIScreen.main.bounds
 
-    
+
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: true) {
+//        ScrollView(.horizontal, showsIndicators: true) {
             HStack {
                 ForEach(cards) { card in
                     ZStack {
@@ -46,7 +46,7 @@ struct CardScrollView: View {
                     self.isShowingAnswer.toggle()
                 }
             }
-        }
+//        }
     }
 }
 struct MockCardView_Previews: PreviewProvider {

@@ -1,5 +1,6 @@
 {
-    "locations": [{
+    "locations": [
+        {
             "id": 0,
             "name": "Los Alamos (Manhattan Project)",
             "latitude": 35.875556,
@@ -39,7 +40,6 @@
             "year": "1985",
             "image": "northriv-1"
         }
-
     ]
 }
 

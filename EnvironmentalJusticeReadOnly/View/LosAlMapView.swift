@@ -8,7 +8,7 @@
 import SwiftUI
 import MapKit
 
-struct NewMapView: View {
+struct LosAlMapView: View {
     
     @State var coordinateRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 35.875556, longitude: -106.324167), span: MKCoordinateSpan(latitudeDelta: 5, longitudeDelta: 10))
     let losAlLocation = [Location(id: 01, name: "Los Alamos National Labratory", latitude: 35.875556, longitude: -106.324167, year: "1942", image: "losal1-1")]
@@ -35,9 +35,9 @@ struct NewMapView: View {
     }
 }
 
-struct NewMapView_Previews: PreviewProvider {
+struct LosAlMapView_Previews: PreviewProvider {
     static var previews: some View {
-        NewMapView()
+        LosAlMapView()
     }
 }
 

@@ -120,7 +120,7 @@ struct ContentView: View {
                                         .frame(width: UIScreen.main.bounds.width-20, alignment: .center)
                                 }
                                 
-                                NavigationLink(destination: MapViewThree()) {
+                                NavigationLink(destination: NewMapView()) {
                                     Text("Map")
                                         .kerning(2.0)
                                         .fontWeight(.light)

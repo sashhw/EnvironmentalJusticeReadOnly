@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D916027426B9AD5A0069CE5E /* MapCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916027326B9AD5A0069CE5E /* MapCircle.swift */; };
+		D916027426B9AD5A0069CE5E /* MainMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916027326B9AD5A0069CE5E /* MainMapView.swift */; };
 		D916027626B9AEB20069CE5E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916027526B9AEB20069CE5E /* CardView.swift */; };
 		D916027826B9AF380069CE5E /* LosAlMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916027726B9AF380069CE5E /* LosAlMapView.swift */; };
 		D916027A26B9C3920069CE5E /* DelanoPic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916027926B9C3920069CE5E /* DelanoPic.swift */; };
-		D920B00C281AEE99001EBF82 /* MapWithCaseLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D920B00B281AEE99001EBF82 /* MapWithCaseLocations.swift */; };
+		D920B00C281AEE99001EBF82 /* NewMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D920B00B281AEE99001EBF82 /* NewMapView.swift */; };
 		D953816726BEF26F001319AC /* DelanoMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953816626BEF26F001319AC /* DelanoMap.swift */; };
 		D953816926BEF582001319AC /* HawkinsMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953816826BEF582001319AC /* HawkinsMap.swift */; };
 		D953816B26BF0170001319AC /* WarrenMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953816A26BF0170001319AC /* WarrenMap.swift */; };
@@ -22,17 +22,19 @@
 		D96E429327FF340D001DFC84 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = D96E429227FF340D001DFC84 /* FirebaseFirestoreSwift-Beta */; };
 		D97E6EC02805D0DA00AD1CFC /* CardScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97E6EBF2805D0DA00AD1CFC /* CardScrollView.swift */; };
 		D98B5840268A3C5D00F11DBE /* locationsEJCase.json in Resources */ = {isa = PBXBuildFile; fileRef = D98B583F268A3C5D00F11DBE /* locationsEJCase.json */; };
-		D98B5844268A3D0A00F11DBE /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98B5843268A3D0A00F11DBE /* MapModel.swift */; };
+		D98B5844268A3D0A00F11DBE /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98B5843268A3D0A00F11DBE /* LocationModel.swift */; };
 		D992347928062C5700926F2E /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D992347828062C5700926F2E /* CardViewModel.swift */; };
 		D99B559726D409EA00773CBE /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99B559626D409EA00773CBE /* CardModel.swift */; };
 		D9AC1EC4268B9FBA0080C9F3 /* CiteSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AC1EC3268B9FBA0080C9F3 /* CiteSheetView.swift */; };
+		D9AED33A2862158000591D6E /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AED3392862158000591D6E /* MapViewModel.swift */; };
+		D9AED33C2862184900591D6E /* NewLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AED33B2862184900591D6E /* NewLocationModel.swift */; };
 		D9F4AD332673C15E001FDE22 /* EnvironmentalJusticeReadOnlyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F4AD322673C15E001FDE22 /* EnvironmentalJusticeReadOnlyApp.swift */; };
 		D9F4AD352673C15E001FDE22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F4AD342673C15E001FDE22 /* ContentView.swift */; };
 		D9F4AD372673C161001FDE22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9F4AD362673C161001FDE22 /* Assets.xcassets */; };
 		D9F4AD3A2673C161001FDE22 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9F4AD392673C161001FDE22 /* Preview Assets.xcassets */; };
 		D9F4AD422673C28D001FDE22 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9F4AD412673C28C001FDE22 /* GoogleService-Info.plist */; };
 		D9F4AD482673C640001FDE22 /* CaseRepositoryTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F4AD472673C640001FDE22 /* CaseRepositoryTwo.swift */; };
-		D9F4AD4A2673C663001FDE22 /* CasesTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F4AD492673C663001FDE22 /* CasesTwo.swift */; };
+		D9F4AD4A2673C663001FDE22 /* CasesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F4AD492673C663001FDE22 /* CasesModel.swift */; };
 		D9F4AD4C2673C7C5001FDE22 /* CaseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F4AD4B2673C7C5001FDE22 /* CaseListViewModel.swift */; };
 		D9F4AD4E2673C7CE001FDE22 /* CaseCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F4AD4D2673C7CE001FDE22 /* CaseCellViewModel.swift */; };
 		D9F4AD502673D34B001FDE22 /* USCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F4AD4F2673D34B001FDE22 /* USCases.swift */; };
@@ -41,11 +43,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D916027326B9AD5A0069CE5E /* MapCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCircle.swift; sourceTree = "<group>"; };
+		D916027326B9AD5A0069CE5E /* MainMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapView.swift; sourceTree = "<group>"; };
 		D916027526B9AEB20069CE5E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		D916027726B9AF380069CE5E /* LosAlMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LosAlMapView.swift; sourceTree = "<group>"; };
 		D916027926B9C3920069CE5E /* DelanoPic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelanoPic.swift; sourceTree = "<group>"; };
-		D920B00B281AEE99001EBF82 /* MapWithCaseLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapWithCaseLocations.swift; sourceTree = "<group>"; };
+		D920B00B281AEE99001EBF82 /* NewMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMapView.swift; sourceTree = "<group>"; };
 		D93E18E7269F802C004AB4D9 /* EnvironmentalJusticeReadOnlyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentalJusticeReadOnlyTests.swift; sourceTree = "<group>"; };
 		D93E18E9269F802C004AB4D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D953816626BEF26F001319AC /* DelanoMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelanoMap.swift; sourceTree = "<group>"; };
@@ -54,10 +56,12 @@
 		D953816C26BF4F74001319AC /* NorthRiverMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthRiverMap.swift; sourceTree = "<group>"; };
 		D97E6EBF2805D0DA00AD1CFC /* CardScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardScrollView.swift; sourceTree = "<group>"; };
 		D98B583F268A3C5D00F11DBE /* locationsEJCase.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = locationsEJCase.json; sourceTree = "<group>"; };
-		D98B5843268A3D0A00F11DBE /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
+		D98B5843268A3D0A00F11DBE /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		D992347828062C5700926F2E /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 		D99B559626D409EA00773CBE /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardModel.swift; path = EnvironmentalJusticeReadOnly/Model/CardModel.swift; sourceTree = SOURCE_ROOT; };
 		D9AC1EC3268B9FBA0080C9F3 /* CiteSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiteSheetView.swift; sourceTree = "<group>"; };
+		D9AED3392862158000591D6E /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		D9AED33B2862184900591D6E /* NewLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLocationModel.swift; sourceTree = "<group>"; };
 		D9F4AD2F2673C15E001FDE22 /* EnvironmentalJusticeReadOnly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnvironmentalJusticeReadOnly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9F4AD322673C15E001FDE22 /* EnvironmentalJusticeReadOnlyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentalJusticeReadOnlyApp.swift; sourceTree = "<group>"; };
 		D9F4AD342673C15E001FDE22 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,7 +70,7 @@
 		D9F4AD3B2673C161001FDE22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9F4AD412673C28C001FDE22 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D9F4AD472673C640001FDE22 /* CaseRepositoryTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseRepositoryTwo.swift; sourceTree = "<group>"; };
-		D9F4AD492673C663001FDE22 /* CasesTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasesTwo.swift; sourceTree = "<group>"; };
+		D9F4AD492673C663001FDE22 /* CasesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasesModel.swift; sourceTree = "<group>"; };
 		D9F4AD4B2673C7C5001FDE22 /* CaseListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseListViewModel.swift; sourceTree = "<group>"; };
 		D9F4AD4D2673C7CE001FDE22 /* CaseCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseCellViewModel.swift; sourceTree = "<group>"; };
 		D9F4AD4F2673D34B001FDE22 /* USCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USCases.swift; sourceTree = "<group>"; };
@@ -153,8 +157,8 @@
 				D97E6EBF2805D0DA00AD1CFC /* CardScrollView.swift */,
 				D9F4AD342673C15E001FDE22 /* ContentView.swift */,
 				D9F4AD4F2673D34B001FDE22 /* USCases.swift */,
-				D916027326B9AD5A0069CE5E /* MapCircle.swift */,
-				D920B00B281AEE99001EBF82 /* MapWithCaseLocations.swift */,
+				D916027326B9AD5A0069CE5E /* MainMapView.swift */,
+				D920B00B281AEE99001EBF82 /* NewMapView.swift */,
 				D916027526B9AEB20069CE5E /* CardView.swift */,
 				D916027926B9C3920069CE5E /* DelanoPic.swift */,
 				D953816626BEF26F001319AC /* DelanoMap.swift */,
@@ -174,6 +178,7 @@
 				D9F4AD4B2673C7C5001FDE22 /* CaseListViewModel.swift */,
 				D9F4AD4D2673C7CE001FDE22 /* CaseCellViewModel.swift */,
 				D992347828062C5700926F2E /* CardViewModel.swift */,
+				D9AED3392862158000591D6E /* MapViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -181,8 +186,9 @@
 		D9F4AD462673C61A001FDE22 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D9F4AD492673C663001FDE22 /* CasesTwo.swift */,
-				D98B5843268A3D0A00F11DBE /* MapModel.swift */,
+				D9F4AD492673C663001FDE22 /* CasesModel.swift */,
+				D98B5843268A3D0A00F11DBE /* LocationModel.swift */,
+				D9AED33B2862184900591D6E /* NewLocationModel.swift */,
 				D98B583F268A3C5D00F11DBE /* locationsEJCase.json */,
 				D99B559626D409EA00773CBE /* CardModel.swift */,
 				D9F4AD512673D478001FDE22 /* ejDefCitations.swift */,
@@ -277,23 +283,25 @@
 				D97E6EC02805D0DA00AD1CFC /* CardScrollView.swift in Sources */,
 				D9F4AD522673D478001FDE22 /* ejDefCitations.swift in Sources */,
 				D9F4AD352673C15E001FDE22 /* ContentView.swift in Sources */,
-				D98B5844268A3D0A00F11DBE /* MapModel.swift in Sources */,
-				D916027426B9AD5A0069CE5E /* MapCircle.swift in Sources */,
+				D98B5844268A3D0A00F11DBE /* LocationModel.swift in Sources */,
+				D916027426B9AD5A0069CE5E /* MainMapView.swift in Sources */,
 				D9F4AD332673C15E001FDE22 /* EnvironmentalJusticeReadOnlyApp.swift in Sources */,
 				D9F4AD542673D4A8001FDE22 /* ejTitleTwo.swift in Sources */,
 				D916027826B9AF380069CE5E /* LosAlMapView.swift in Sources */,
+				D9AED33C2862184900591D6E /* NewLocationModel.swift in Sources */,
 				D9F4AD4E2673C7CE001FDE22 /* CaseCellViewModel.swift in Sources */,
 				D99B559726D409EA00773CBE /* CardModel.swift in Sources */,
 				D953816B26BF0170001319AC /* WarrenMap.swift in Sources */,
-				D920B00C281AEE99001EBF82 /* MapWithCaseLocations.swift in Sources */,
+				D920B00C281AEE99001EBF82 /* NewMapView.swift in Sources */,
 				D916027A26B9C3920069CE5E /* DelanoPic.swift in Sources */,
 				D9AC1EC4268B9FBA0080C9F3 /* CiteSheetView.swift in Sources */,
 				D953816926BEF582001319AC /* HawkinsMap.swift in Sources */,
 				D9F4AD4C2673C7C5001FDE22 /* CaseListViewModel.swift in Sources */,
-				D9F4AD4A2673C663001FDE22 /* CasesTwo.swift in Sources */,
+				D9F4AD4A2673C663001FDE22 /* CasesModel.swift in Sources */,
 				D953816D26BF4F74001319AC /* NorthRiverMap.swift in Sources */,
 				D9F4AD482673C640001FDE22 /* CaseRepositoryTwo.swift in Sources */,
 				D916027626B9AEB20069CE5E /* CardView.swift in Sources */,
+				D9AED33A2862158000591D6E /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

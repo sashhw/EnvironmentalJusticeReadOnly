@@ -46,7 +46,7 @@ struct MainMapView: View {
                                             .multilineTextAlignment(.center)
                                     }
                                     
-                                    NewMapView()
+                                    LosAlMapView()
                                         .frame(width: 350, height: 300, alignment: .center)
                                     
                                     Image("losal1-1")

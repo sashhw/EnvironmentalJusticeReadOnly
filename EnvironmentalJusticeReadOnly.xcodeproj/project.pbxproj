@@ -11,6 +11,7 @@
 		D916027626B9AEB20069CE5E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916027526B9AEB20069CE5E /* CardView.swift */; };
 		D916027826B9AF380069CE5E /* LosAlMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916027726B9AF380069CE5E /* LosAlMapView.swift */; };
 		D916027A26B9C3920069CE5E /* DelanoPic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916027926B9C3920069CE5E /* DelanoPic.swift */; };
+		D920B00C281AEE99001EBF82 /* MapWithCaseLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D920B00B281AEE99001EBF82 /* MapWithCaseLocations.swift */; };
 		D953816726BEF26F001319AC /* DelanoMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953816626BEF26F001319AC /* DelanoMap.swift */; };
 		D953816926BEF582001319AC /* HawkinsMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953816826BEF582001319AC /* HawkinsMap.swift */; };
 		D953816B26BF0170001319AC /* WarrenMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953816A26BF0170001319AC /* WarrenMap.swift */; };
@@ -44,6 +45,7 @@
 		D916027526B9AEB20069CE5E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		D916027726B9AF380069CE5E /* LosAlMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LosAlMapView.swift; sourceTree = "<group>"; };
 		D916027926B9C3920069CE5E /* DelanoPic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelanoPic.swift; sourceTree = "<group>"; };
+		D920B00B281AEE99001EBF82 /* MapWithCaseLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapWithCaseLocations.swift; sourceTree = "<group>"; };
 		D93E18E7269F802C004AB4D9 /* EnvironmentalJusticeReadOnlyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentalJusticeReadOnlyTests.swift; sourceTree = "<group>"; };
 		D93E18E9269F802C004AB4D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D953816626BEF26F001319AC /* DelanoMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelanoMap.swift; sourceTree = "<group>"; };
@@ -99,7 +101,6 @@
 		D9F4AD262673C15E001FDE22 = {
 			isa = PBXGroup;
 			children = (
-				D97E6EBF2805D0DA00AD1CFC /* CardScrollView.swift */,
 				D9F4AD312673C15E001FDE22 /* EnvironmentalJusticeReadOnly */,
 				D93E18E6269F802C004AB4D9 /* EnvironmentalJusticeReadOnlyTests */,
 				D9F4AD302673C15E001FDE22 /* Products */,
@@ -149,9 +150,11 @@
 		D9F4AD442673C60E001FDE22 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D97E6EBF2805D0DA00AD1CFC /* CardScrollView.swift */,
 				D9F4AD342673C15E001FDE22 /* ContentView.swift */,
 				D9F4AD4F2673D34B001FDE22 /* USCases.swift */,
 				D916027326B9AD5A0069CE5E /* MapCircle.swift */,
+				D920B00B281AEE99001EBF82 /* MapWithCaseLocations.swift */,
 				D916027526B9AEB20069CE5E /* CardView.swift */,
 				D916027926B9C3920069CE5E /* DelanoPic.swift */,
 				D953816626BEF26F001319AC /* DelanoMap.swift */,
@@ -282,6 +285,7 @@
 				D9F4AD4E2673C7CE001FDE22 /* CaseCellViewModel.swift in Sources */,
 				D99B559726D409EA00773CBE /* CardModel.swift in Sources */,
 				D953816B26BF0170001319AC /* WarrenMap.swift in Sources */,
+				D920B00C281AEE99001EBF82 /* MapWithCaseLocations.swift in Sources */,
 				D916027A26B9C3920069CE5E /* DelanoPic.swift in Sources */,
 				D9AC1EC4268B9FBA0080C9F3 /* CiteSheetView.swift in Sources */,
 				D953816926BEF582001319AC /* HawkinsMap.swift in Sources */,

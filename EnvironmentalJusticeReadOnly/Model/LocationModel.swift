@@ -18,9 +18,4 @@ struct Location: Decodable, Identifiable {
     let latitude: Double
     let longitude: Double
     let year: String
-    
-    var image: String
-    var coordinate: CLLocationCoordinate2D {
-        CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-    }
 }

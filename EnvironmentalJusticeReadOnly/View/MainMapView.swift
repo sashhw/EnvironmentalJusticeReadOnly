@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MapViewThree: View {
+struct MainMapView: View {
     @State  var locations: [Location] = []
     
     let locationOne = Location(id: 0, name: "Los Alamos National Laboratory", latitude: 35.875556, longitude: -106.324167, year: "1942", image: "losal1-1")

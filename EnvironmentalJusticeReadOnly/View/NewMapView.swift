@@ -8,20 +8,17 @@
 import SwiftUI
 import MapKit
 
-struct MapWithCaseLocations: View {
+struct NewMapView: View {
 
-
+    @ObservedObject var datas = ReadData()
     
     var body: some View {
-        Text("He")
-            .background(Color.black)
-            .font(.largeTitle)
-            .cornerRadius(8.0)
+       
     }
 }
 
 struct MapWithCaseLocations_Previews: PreviewProvider {
     static var previews: some View {
-        MapWithCaseLocations()
+        NewMapView()
     }
 }

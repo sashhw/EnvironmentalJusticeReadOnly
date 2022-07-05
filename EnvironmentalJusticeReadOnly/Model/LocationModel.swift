@@ -12,7 +12,7 @@ struct JSONData: Decodable {
     let locations: [Location]
 }
 
-struct Location: Decodable, Identifiable {
+struct Location: Decodable, Identifiable, Hashable {
     let id: Int
     let name: String
     let latitude: Double

@@ -28,6 +28,7 @@
 		D9AC1EC4268B9FBA0080C9F3 /* CiteSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AC1EC3268B9FBA0080C9F3 /* CiteSheetView.swift */; };
 		D9AED33A2862158000591D6E /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AED3392862158000591D6E /* MapViewModel.swift */; };
 		D9AED33C2862184900591D6E /* NewLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AED33B2862184900591D6E /* NewLocationModel.swift */; };
+		D9BAD44E286A4F0A00ED5B6B /* CaseLocationSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BAD44D286A4F0A00ED5B6B /* CaseLocationSheet.swift */; };
 		D9F4AD332673C15E001FDE22 /* EnvironmentalJusticeReadOnlyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F4AD322673C15E001FDE22 /* EnvironmentalJusticeReadOnlyApp.swift */; };
 		D9F4AD352673C15E001FDE22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F4AD342673C15E001FDE22 /* ContentView.swift */; };
 		D9F4AD372673C161001FDE22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9F4AD362673C161001FDE22 /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 		D9AC1EC3268B9FBA0080C9F3 /* CiteSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiteSheetView.swift; sourceTree = "<group>"; };
 		D9AED3392862158000591D6E /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		D9AED33B2862184900591D6E /* NewLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLocationModel.swift; sourceTree = "<group>"; };
+		D9BAD44D286A4F0A00ED5B6B /* CaseLocationSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseLocationSheet.swift; sourceTree = "<group>"; };
 		D9F4AD2F2673C15E001FDE22 /* EnvironmentalJusticeReadOnly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnvironmentalJusticeReadOnly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9F4AD322673C15E001FDE22 /* EnvironmentalJusticeReadOnlyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentalJusticeReadOnlyApp.swift; sourceTree = "<group>"; };
 		D9F4AD342673C15E001FDE22 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				D9F4AD4F2673D34B001FDE22 /* USCases.swift */,
 				D916027326B9AD5A0069CE5E /* MainMapView.swift */,
 				D920B00B281AEE99001EBF82 /* NewMapView.swift */,
+				D9BAD44D286A4F0A00ED5B6B /* CaseLocationSheet.swift */,
 				D916027526B9AEB20069CE5E /* CardView.swift */,
 				D916027926B9C3920069CE5E /* DelanoPic.swift */,
 				D953816626BEF26F001319AC /* DelanoMap.swift */,
@@ -281,6 +284,7 @@
 				D953816726BEF26F001319AC /* DelanoMap.swift in Sources */,
 				D9F4AD502673D34B001FDE22 /* USCases.swift in Sources */,
 				D97E6EC02805D0DA00AD1CFC /* CardScrollView.swift in Sources */,
+				D9BAD44E286A4F0A00ED5B6B /* CaseLocationSheet.swift in Sources */,
 				D9F4AD522673D478001FDE22 /* ejDefCitations.swift in Sources */,
 				D9F4AD352673C15E001FDE22 /* ContentView.swift in Sources */,
 				D98B5844268A3D0A00F11DBE /* LocationModel.swift in Sources */,

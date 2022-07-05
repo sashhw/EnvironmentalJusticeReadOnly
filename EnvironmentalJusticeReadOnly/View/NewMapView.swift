@@ -9,6 +9,7 @@ import SwiftUI
 import MapKit
 
 struct NewMapView: View {
+    @State var showAnnotation = false
     @State var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(
             latitude: 35.0,
@@ -29,10 +30,11 @@ struct NewMapView: View {
                     longitude: location.longitude
                 )
             ) {
-                VStack {
-                    Text(location.image)
-                        .shadow(color: .black, radius: 3.0)
+                NavigationLink {
+                    CaseLocationSheet(location: location)
 
+                } label: {
+                    Text(location.image)
                 }
             }
         }

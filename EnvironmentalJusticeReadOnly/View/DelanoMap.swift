@@ -11,7 +11,7 @@ import MapKit
 struct DelanoMap: View {
     
     @State var coordinateRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 35.770725, longitude: -119.466926), span: MKCoordinateSpan(latitudeDelta: 5, longitudeDelta: 10))
-    let delanoLocation = [Location(id: 02, name: "Delano Grape Strike", latitude: 35.770725, longitude: -119.466926, year: "1965", image: "delano")]
+    let delanoLocation = [Location(id: 02, name: "Delano Grape Strike", latitude: 35.770725, longitude: -119.466926, year: "1965", whatCameNext: delanoSheet, image: "delano")]
     @State var showingAlert = false
     @State var presentingModal = false
     

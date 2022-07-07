@@ -10,7 +10,7 @@ import MapKit
 
 struct HawkinsMap: View {
     @State var coordinateRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 33.601685, longitude: -90.772131), span: MKCoordinateSpan(latitudeDelta: 5, longitudeDelta: 10))
-    let hawkinsLocation = [Location(id: 03, name: "Hawkins V. Town of Shaw", latitude: 33.601685, longitude: -90.772131, year: "1971", image: "hawkinsshaw")]
+    let hawkinsLocation = [Location(id: 03, name: "Hawkins V. Town of Shaw", latitude: 33.601685, longitude: -90.772131, year: "1971", whatCameNext: hawkinsSheet, image: "hawkinsshaw")]
     @State var showingAlert = false
     @State var presentingModal = false
     let screenRect = UIScreen.main.bounds

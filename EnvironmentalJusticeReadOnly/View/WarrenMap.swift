@@ -11,7 +11,7 @@ import MapKit
 struct WarrenMap: View {
     
     @State var coordinateRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 36.3523, longitude: -78.1582), span: MKCoordinateSpan(latitudeDelta: 5, longitudeDelta: 10))
-    let warrenLocation = [Location(id: 04, name: "Warren County PCB Landfil", latitude: 36.3523, longitude: -78.1582, year: "1982", image: "WarrenCO")]
+    let warrenLocation = [Location(id: 04, name: "Warren County PCB Landfil", latitude: 36.3523, longitude: -78.1582, year: "1982", whatCameNext: warrenSheet, image: "WarrenCO")]
     @State var showingAlert = false
     @State var presentingModal = false
     var body: some View {

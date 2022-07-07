@@ -11,7 +11,7 @@ import MapKit
 struct LosAlMapView: View {
     
     @State var coordinateRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 35.875556, longitude: -106.324167), span: MKCoordinateSpan(latitudeDelta: 5, longitudeDelta: 10))
-    let losAlLocation = [Location(id: 01, name: "Los Alamos National Labratory", latitude: 35.875556, longitude: -106.324167, year: "1942", image: "losal1-1")]
+    let losAlLocation = [Location(id: 01, name: "Los Alamos National Labratory", latitude: 35.875556, longitude: -106.324167, year: "1942", whatCameNext: lostAlSheet, image: "losal1-1")]
     @State var showingAlert = false
     @State var presentingModal = false
     var body: some View {

@@ -10,7 +10,7 @@ import MapKit
 
 struct NorthRiverMap: View {
     @State var coordinateRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 40.825535, longitude: -73.956935), span: MKCoordinateSpan(latitudeDelta: 5, longitudeDelta: 10))
-    let northRiverLocation = [Location(id: 04, name: "North River Sewage Treatment Plant", latitude: 40.825535, longitude: -73.956935, year: "1985", image: "northriv-1")]
+    let northRiverLocation = [Location(id: 04, name: "North River Sewage Treatment Plant", latitude: 40.825535, longitude: -73.956935, year: "1985", whatCameNext: northSheet, image: "northriv-1")]
     @State var showingAlert = false
     @State var presentingModal = false
     

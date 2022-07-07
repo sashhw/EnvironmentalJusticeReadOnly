@@ -7,9 +7,10 @@
 
 import Foundation
 
-struct Card: Identifiable {
+struct Card: Identifiable, Hashable {
     var word: String
     var definition: String
+    var isShowingDef: Bool = false 
     var id = UUID()
 }
 

@@ -23,6 +23,11 @@ struct NewMapView: View {
     let screenRect = UIScreen.main.bounds
 
     var body: some View {
+        Text("EcoJustice Cases on Map")
+            .font(.title3)
+            .kerning(2)
+            .padding(.bottom)
+
         Map(coordinateRegion: $region, annotationItems: locations) { location in
             MapAnnotation(
                 coordinate: CLLocationCoordinate2D(
@@ -35,10 +40,13 @@ struct NewMapView: View {
 
                 } label: {
                     Text(location.image)
+                        .font(.title)
                 }
             }
         }
         .frame(width: screenRect.width - 20, height: 300, alignment: .center)
+        .cornerRadius(10)
+        Spacer()
     }
 }
 

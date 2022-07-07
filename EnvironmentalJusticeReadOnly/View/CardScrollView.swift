@@ -98,7 +98,7 @@ struct CardScrollView: View {
                 .fontWeight(.semibold)
                 .padding(.bottom, 70)
             HStack(alignment: .center, spacing: 30) {
-                ForEach(cards){ card in
+                ForEach(cards, id: \.self){ card in
                     ZStack {
                         RoundedRectangle(cornerRadius: 25)
                             .fill(Color.white)

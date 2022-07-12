@@ -68,6 +68,13 @@ struct ScrollingStackModifier: ViewModifier {
 
 struct CardScrollView: View {
     @State var showDef = false
+    @State var flashcardRotation = 0.0
+    @State var contentRotation = 0.0
+
+    init() {
+        UITableView.appearance().backgroundColor = .white
+    }
+
     var cards: [Card] = [
         Card(word: "redlining", definition: redlining),
         Card(word: "Equal Protection Clause", definition: equalProtectionClause),
@@ -91,43 +98,98 @@ struct CardScrollView: View {
     ]
 
     var body: some View {
-
+        ZStack {
+            Image("dam-edited")
+                .opacity(0.3)
+                .scaledToFit()
+                .frame(
+                    width: UIScreen.main.bounds.width,
+                    height: UIScreen.main.bounds.width,
+                    alignment: .center
+                )
         VStack {
-            Text("EcoJustice Terms")
-                .font(.title)
-                .fontWeight(.semibold)
-                .padding(.bottom, 70)
+            ZStack {
+                RoundedRectangle(cornerRadius: 5)
+                    .foregroundColor(Color.black)
+                    .opacity(0.65)
+                    .frame(width: 235, height: 45, alignment: .center)
+
+                Text("EcoJustice Terms")
+                    .kerning(2.0)
+                    .foregroundColor(Color.white)
+                    .font(.title2)
+            }
+            .padding(.bottom, 130)
+
             HStack(alignment: .center, spacing: 30) {
                 ForEach(cards, id: \.self){ card in
                     ZStack {
-                        RoundedRectangle(cornerRadius: 25)
+                        RoundedRectangle(cornerRadius: 10)
                             .fill(Color.white)
                             .shadow(color: .gray, radius: 10)
-                            .frame(width: 250, height: 200, alignment: .center)
+                            .frame(width: 300, height: 200, alignment: .center)
 
                         if showDef {
                             Text(card.definition)
-                                .font(.body)
+                                .kerning(1.0)
+                                .font(.headline)
+                                .fontWeight(.light)
                                 .foregroundColor(.black)
                                 .padding()
-                                .frame(width: 250, height: 200, alignment: .center)
+                                .frame(width: 300, height: 200, alignment: .center)
                                 .cornerRadius(10)
 
                         } else {
-                            Text(card.word)
-                                .font(.title2)
-                                .foregroundColor(.black)
-                                .frame(width: 250, height: 200, alignment: .center)
-                                .cornerRadius(10)
+                            VStack {
+                                Text(card.word)
+                                    .kerning(1.0)
+                                    .font(.title3)
+                                    .foregroundColor(.black)
+                                    .cornerRadius(10)
+                                Text("Tap for definition")
+                                    .kerning(1.0)
+                                    .font(.caption)
+                                    .foregroundColor(.black)
+                                    .opacity(0.5)
+                                    .padding()
+                            }
+                            .frame(width: 300, height: 200, alignment: .center)
                         }
                     }
                     .onTapGesture {
-                        showDef.toggle()
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 4.5) {
+                            self.showDef.toggle()
+                        }
+                        flipFlashcard()
                     }
                 }
-                .modifier(ScrollingStackModifier(items: cards, itemWidth: 250, itemSpacing: 30))
+                .modifier(ScrollingStackModifier(items: cards, itemWidth: 300, itemSpacing: 30))
+            }
+            .padding(.bottom)
+
+            ZStack {
+                RoundedRectangle(cornerRadius: 3)
+                    .foregroundColor(Color.black)
+                    .opacity(0.8)
+                    .frame(width: 90, height: 30)
+                Text("Shuffle")
+                    .kerning(2.0)
+                    .foregroundColor(Color.white)
+                    .font(.caption)
+                    .shadow(color: .black, radius: 3)
+                    .cornerRadius(5)
             }
             Spacer()
         }
+        }
     }
+
+    func flipFlashcard() {
+        let animationTime = 1.0
+        withAnimation(.easeInOut(duration: animationTime)) {
+            flashcardRotation += 180
+            showDef.toggle()
+        }
+    }
+
 }

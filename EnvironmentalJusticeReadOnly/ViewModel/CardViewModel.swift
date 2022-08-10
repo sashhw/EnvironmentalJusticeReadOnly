@@ -8,6 +8,7 @@
 import Foundation
 
 struct NoteCardViewModel<Base: RandomAccessCollection>: RandomAccessCollection {
+
     typealias Element = (index: Index, element: Base.Element)
 
     typealias Index = Base.Index
@@ -38,4 +39,9 @@ extension RandomAccessCollection {
     func indexed() -> NoteCardViewModel<Self> {
         NoteCardViewModel(base: self)
     }
+}
+
+func shuffleTerms() {
+    var cards = CardsList.cards
+    cards.shuffle()
 }

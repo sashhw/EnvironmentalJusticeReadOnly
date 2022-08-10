@@ -10,9 +10,22 @@ import Foundation
 struct Card: Identifiable, Hashable {
     var word: String
     var definition: String
-    var isShowingDef: Bool = false 
+    var selected: Bool = false
     var id = UUID()
+    var wordDef: String {
+        get {
+            if selected {
+                return "\(definition)"
+            } else {
+                return "\(word)"
+            }
+        }
+    }
     var subCard: [Card]?
+
+   mutating func flipFlashcard() {
+       selected = true 
+    }
 }
 
 struct Item: Identifiable {

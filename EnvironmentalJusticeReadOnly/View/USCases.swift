@@ -80,29 +80,35 @@ struct DetailView: View {
                     .resizable()
                     .frame(width: 450, height: 300, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .aspectRatio(contentMode: .fill)
-                    .cornerRadius(10)
+                    .cornerRadius(6)
                     .shadow(radius: 10)
-                    .scaleEffect(self.zoomed ? 0.9 : 0.75)
+                    .scaleEffect(self.zoomed ? 0.9 : 0.8)
                     .onTapGesture {
                         self.zoomed.toggle()
                     }
                     .animation(.spring())
 
                 HStack(alignment: .center) {
-                    let value = String(caseCellVM.ejCase.year)
-                    Text(value)
-                        .kerning(1.0)
-                        .font(.body)
-                        .fontWeight(.semibold)
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 3)
+                            .foregroundColor(Color.black)
+                            .opacity(0.6)
+                            .frame(width: 55, height: 25)
 
-                   Text("·")
-                        .font(.title3)
+                        let value = String(caseCellVM.ejCase.year)
+                        Text(value)
+                            .kerning(1.0)
+                            .foregroundColor(.white)
+                            .font(.body)
+                            .fontWeight(.semibold)
+                    }
 
                     Text(caseCellVM.ejCase.location)
-                        .kerning(1.0)
-                        .font(.body)
-                        .fontWeight(.light)
-                        .italic()
+                            .kerning(1.0)
+                            .font(.body)
+                            .fontWeight(.light)
+                            .italic()
+                            .padding(.horizontal, 10)
                 }
 
                 HStack {

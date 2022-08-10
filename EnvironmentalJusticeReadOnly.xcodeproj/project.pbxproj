@@ -24,6 +24,7 @@
 		D98B5840268A3C5D00F11DBE /* locationsEJCase.json in Resources */ = {isa = PBXBuildFile; fileRef = D98B583F268A3C5D00F11DBE /* locationsEJCase.json */; };
 		D98B5844268A3D0A00F11DBE /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98B5843268A3D0A00F11DBE /* LocationModel.swift */; };
 		D992347928062C5700926F2E /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D992347828062C5700926F2E /* CardViewModel.swift */; };
+		D996921B2880C3E700C6E296 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D996921A2880C3E700C6E296 /* Localizable.strings */; };
 		D99B559726D409EA00773CBE /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99B559626D409EA00773CBE /* CardModel.swift */; };
 		D9AC1EC4268B9FBA0080C9F3 /* CiteSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AC1EC3268B9FBA0080C9F3 /* CiteSheetView.swift */; };
 		D9AED33A2862158000591D6E /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AED3392862158000591D6E /* MapViewModel.swift */; };
@@ -59,6 +60,7 @@
 		D98B583F268A3C5D00F11DBE /* locationsEJCase.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = locationsEJCase.json; sourceTree = "<group>"; };
 		D98B5843268A3D0A00F11DBE /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		D992347828062C5700926F2E /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		D996921A2880C3E700C6E296 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		D99B559626D409EA00773CBE /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardModel.swift; path = EnvironmentalJusticeReadOnly/Model/CardModel.swift; sourceTree = SOURCE_ROOT; };
 		D9AC1EC3268B9FBA0080C9F3 /* CiteSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiteSheetView.swift; sourceTree = "<group>"; };
 		D9AED3392862158000591D6E /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
@@ -157,20 +159,20 @@
 			isa = PBXGroup;
 			children = (
 				D97E6EBF2805D0DA00AD1CFC /* CardScrollView.swift */,
+				D916027526B9AEB20069CE5E /* CardView.swift */,
+				D9BAD44D286A4F0A00ED5B6B /* CaseLocationSheet.swift */,
+				D9AC1EC3268B9FBA0080C9F3 /* CiteSheetView.swift */,
 				D9F4AD342673C15E001FDE22 /* ContentView.swift */,
-				D9F4AD4F2673D34B001FDE22 /* USCases.swift */,
+				D953816626BEF26F001319AC /* DelanoMap.swift */,
+				D916027926B9C3920069CE5E /* DelanoPic.swift */,
+				D9F4AD532673D4A8001FDE22 /* ejTitleTwo.swift */,
+				D953816826BEF582001319AC /* HawkinsMap.swift */,
+				D916027726B9AF380069CE5E /* LosAlMapView.swift */,
 				D916027326B9AD5A0069CE5E /* MainMapView.swift */,
 				D920B00B281AEE99001EBF82 /* NewMapView.swift */,
-				D9BAD44D286A4F0A00ED5B6B /* CaseLocationSheet.swift */,
-				D916027526B9AEB20069CE5E /* CardView.swift */,
-				D916027926B9C3920069CE5E /* DelanoPic.swift */,
-				D953816626BEF26F001319AC /* DelanoMap.swift */,
 				D953816C26BF4F74001319AC /* NorthRiverMap.swift */,
-				D953816826BEF582001319AC /* HawkinsMap.swift */,
+				D9F4AD4F2673D34B001FDE22 /* USCases.swift */,
 				D953816A26BF0170001319AC /* WarrenMap.swift */,
-				D916027726B9AF380069CE5E /* LosAlMapView.swift */,
-				D9AC1EC3268B9FBA0080C9F3 /* CiteSheetView.swift */,
-				D9F4AD532673D4A8001FDE22 /* ejTitleTwo.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -195,6 +197,7 @@
 				D98B583F268A3C5D00F11DBE /* locationsEJCase.json */,
 				D99B559626D409EA00773CBE /* CardModel.swift */,
 				D9F4AD512673D478001FDE22 /* ejDefCitations.swift */,
+				D996921A2880C3E700C6E296 /* Localizable.strings */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				en,
 				Base,
 				"es-419",
+				es,
 			);
 			mainGroup = D9F4AD262673C15E001FDE22;
 			packageReferences = (
@@ -266,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D996921B2880C3E700C6E296 /* Localizable.strings in Resources */,
 				D9F4AD422673C28D001FDE22 /* GoogleService-Info.plist in Resources */,
 				D9F4AD3A2673C161001FDE22 /* Preview Assets.xcassets in Resources */,
 				D9F4AD372673C161001FDE22 /* Assets.xcassets in Resources */,

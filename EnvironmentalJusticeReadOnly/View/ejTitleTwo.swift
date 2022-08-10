@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ejTitle: View {
+struct ejTitleView: View {
     var body: some View {
         Text("Environmental Justice")
             .fontWeight(.light)
@@ -18,7 +18,7 @@ struct ejTitle: View {
             .scaleEffect(0.9)
             .background(Color.white)
             .cornerRadius(15)
-            .opacity(0.7)
+            .opacity(0.85)
             .minimumScaleFactor(0.5)
             .frame(width: UIScreen.main.bounds.width-20, alignment: .center)
     }
@@ -26,6 +26,6 @@ struct ejTitle: View {
 
 struct ejTitle_Previews: PreviewProvider {
     static var previews: some View {
-        ejTitle()
+        ejTitleView()
     }
 }

@@ -12,7 +12,7 @@ struct ContentView: View {
     @State var showSheetView = false
     let usCases = USCases()
     let screenRect = UIScreen.main.bounds
-    let ejTitleText = ejTitle()
+    let ejTitleText = ejTitleView()
     var body: some View {
         NavigationView {
             ZStack {
@@ -45,7 +45,7 @@ struct ContentView: View {
                                         .scaleEffect(0.9)
                                         .background(Color.white)
                                         .cornerRadius(15)
-                                        .opacity(0.7)
+                                        .opacity(0.85)
                                         .padding(.horizontal, 30.0)
                                         .minimumScaleFactor(0.5)
                                         .frame(width: UIScreen.main.bounds.width-20, alignment: .center)
@@ -62,7 +62,7 @@ struct ContentView: View {
                                             .scaleEffect(0.9)
                                             .background(Color.white)
                                             .cornerRadius(15)
-                                            .opacity(0.7)
+                                            .opacity(0.85)
                                             .padding(.horizontal, 30.0)
                                             .minimumScaleFactor(0.5)
                                             .frame(width: UIScreen.main.bounds.width-20, alignment: .center)
@@ -96,7 +96,7 @@ struct ContentView: View {
                                         .scaleEffect(0.9)
                                         .background(Color.white)
                                         .cornerRadius(15)
-                                        .opacity(0.7)
+                                        .opacity(0.85)
                                         .padding(.horizontal, 30.0)
                                         .minimumScaleFactor(0.5)
                                         .frame(width: UIScreen.main.bounds.width-20, alignment: .center)
@@ -114,7 +114,7 @@ struct ContentView: View {
                                         .scaleEffect(0.9)
                                         .background(Color.white)
                                         .cornerRadius(15)
-                                        .opacity(0.7)
+                                        .opacity(0.85)
                                         .padding(.horizontal, 30.0)
                                         .minimumScaleFactor(0.5)
                                         .frame(width: UIScreen.main.bounds.width-20, alignment: .center)
@@ -131,7 +131,7 @@ struct ContentView: View {
                                         .scaleEffect(0.9)
                                         .background(Color.white)
                                         .cornerRadius(15)
-                                        .opacity(0.7)
+                                        .opacity(0.85)
                                         .padding(.horizontal, 30.0)
                                         .minimumScaleFactor(0.5)
                                         .frame(width: UIScreen.main.bounds.width-20, alignment: .center)

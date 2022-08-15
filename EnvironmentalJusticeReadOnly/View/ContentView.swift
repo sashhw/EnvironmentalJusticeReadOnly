@@ -12,24 +12,21 @@ struct ContentView: View {
     @State var showSheetView = false
     let usCases = USCases()
     let screenRect = UIScreen.main.bounds
-    let ejTitleText = ejTitleView()
+    let ejTitleView = EJTitleView()
+
     var body: some View {
         NavigationView {
             ZStack {
-                Image("spainEnv")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .edgesIgnoringSafeArea(.all)
-                    .frame(width: screenRect.width, height: 1500, alignment: .center)
-                    .cornerRadius(5)
-                    .shadow(color: .black, radius: 4)
-                    .opacity(0.6)
+                Image("dam-edited")
+                    .opacity(110)
+                    .backgroundImageStyle()
+
                     .overlay(
                         Group {
                             Spacer()
                             
                             VStack {
-                                ejTitleText
+                                ejTitleView
                                     .padding(.bottom, 100)
                                 
                                 Button {
@@ -37,35 +34,17 @@ struct ContentView: View {
                                 } label: {
                                     Text("Info")
                                         .kerning(2.0)
-                                        .fontWeight(.light)
-                                        .padding()
-                                        .font(.system(.headline))
-                                        .foregroundColor(.black)
-                                        .multilineTextAlignment(.center)
-                                        .scaleEffect(0.9)
-                                        .background(Color.white)
-                                        .cornerRadius(15)
-                                        .opacity(0.85)
-                                        .padding(.horizontal, 30.0)
-                                        .minimumScaleFactor(0.5)
-                                        .frame(width: UIScreen.main.bounds.width-20, alignment: .center)
+                                        .homeButtonStyle()
                                 }
                                 
                                 if flipped {
                                     ZStack {
+                                        ScrollView(showsIndicators: false) {
                                         Text(ejDef)
-                                            .fontWeight(.light)
-                                            .padding()
-                                            .font(.system(.headline))
-                                            .foregroundColor(.black)
-                                            .multilineTextAlignment(.center)
-                                            .scaleEffect(0.9)
-                                            .background(Color.white)
-                                            .cornerRadius(15)
-                                            .opacity(0.85)
-                                            .padding(.horizontal, 30.0)
-                                            .minimumScaleFactor(0.5)
-                                            .frame(width: UIScreen.main.bounds.width-20, alignment: .center)
+                                            .kerning(0.5)
+                                            .font(.system(.body).weight(.light))
+                                            .homeButtonStyle()
+                                        }
                                         Button {
                                             flipped.toggle()
                                         } label: {
@@ -81,6 +60,8 @@ struct ContentView: View {
                                                 .cornerRadius(15)
                                                 .padding(.top, 450)
                                                 .padding(.leading, 200)
+                                                .frame(alignment: .bottom)
+                                                .padding(.bottom, 250)
                                         }
                                     }
                                 }
@@ -88,53 +69,20 @@ struct ContentView: View {
                                 NavigationLink(destination: CardScrollView()) {
                                     Text("Terms")
                                         .kerning(2.0)
-                                        .fontWeight(.light)
-                                        .padding()
-                                        .font(.system(.headline))
-                                        .foregroundColor(.black)
-                                        .multilineTextAlignment(.center)
-                                        .scaleEffect(0.9)
-                                        .background(Color.white)
-                                        .cornerRadius(15)
-                                        .opacity(0.85)
-                                        .padding(.horizontal, 30.0)
-                                        .minimumScaleFactor(0.5)
-                                        .frame(width: UIScreen.main.bounds.width-20, alignment: .center)
+                                        .homeButtonStyle()
                                 }
                                 
                                 NavigationLink(destination: usCases) {
                                     
                                     Text("Cases")
                                         .kerning(2.0)
-                                        .fontWeight(.light)
-                                        .padding()
-                                        .font(.system(.headline))
-                                        .foregroundColor(.black)
-                                        .multilineTextAlignment(.center)
-                                        .scaleEffect(0.9)
-                                        .background(Color.white)
-                                        .cornerRadius(15)
-                                        .opacity(0.85)
-                                        .padding(.horizontal, 30.0)
-                                        .minimumScaleFactor(0.5)
-                                        .frame(width: UIScreen.main.bounds.width-20, alignment: .center)
+                                        .homeButtonStyle()
                                 }
                                 
                                 NavigationLink(destination: NewMapView()) {
                                     Text("Map")
                                         .kerning(2.0)
-                                        .fontWeight(.light)
-                                        .padding()
-                                        .font(.system(.headline))
-                                        .foregroundColor(.black)
-                                        .multilineTextAlignment(.center)
-                                        .scaleEffect(0.9)
-                                        .background(Color.white)
-                                        .cornerRadius(15)
-                                        .opacity(0.85)
-                                        .padding(.horizontal, 30.0)
-                                        .minimumScaleFactor(0.5)
-                                        .frame(width: UIScreen.main.bounds.width-20, alignment: .center)
+                                        .homeButtonStyle()
                                 }
                             }
                             .padding(.bottom, 200.0)

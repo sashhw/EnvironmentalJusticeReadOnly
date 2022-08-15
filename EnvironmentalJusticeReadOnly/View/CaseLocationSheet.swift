@@ -22,18 +22,16 @@ struct CaseLocationSheet: View {
                         .opacity(0.7)
 
                     Spacer()
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 3)
-                            .foregroundColor(Color.black)
-                            .opacity(0.8)
-                            .frame(width: 60, height: 30)
                         Text(location.year)
                             .kerning(2.0)
                             .fontWeight(.light)
                             .font(.system(.callout))
                             .foregroundColor(.white)
                             .cornerRadius(2)
-                    }
+                            .background(RoundedRectangle(cornerRadius: 3)
+                                .foregroundColor(Color.black)
+                                .opacity(0.8)
+                                .frame(width: 60, height: 30))
                 }
                 .padding(.horizontal, 15)
                 .padding(.bottom, 40)
@@ -43,7 +41,7 @@ struct CaseLocationSheet: View {
                     .font(.title3)
                     .padding()
                 Text(location.whatCameNext)
-                    .kerning(1.0)
+                    .kerning(0.5)
                     .fontWeight(.light)
                     .padding()
                     .font(.system(.callout))

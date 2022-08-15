@@ -7,25 +7,21 @@
 
 import SwiftUI
 
-struct ejTitleView: View {
+struct EJTitleView: View {
     var body: some View {
         Text("Environmental Justice")
-            .fontWeight(.light)
-            .padding()
-            .font(.system(.title))
+            .font(.system(.title2).weight(.light))
             .foregroundColor(.black)
-            .multilineTextAlignment(.center)
-            .scaleEffect(0.9)
-            .background(Color.white)
-            .cornerRadius(15)
+            .padding()
             .opacity(0.85)
-            .minimumScaleFactor(0.5)
+            .background(Color.white)
+            .cornerRadius(7)
             .frame(width: UIScreen.main.bounds.width-20, alignment: .center)
     }
 }
 
-struct ejTitle_Previews: PreviewProvider {
+struct EJTitleView_Previews: PreviewProvider {
     static var previews: some View {
-        ejTitleView()
+        EJTitleView()
     }
 }

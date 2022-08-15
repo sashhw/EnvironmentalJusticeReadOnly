@@ -20,7 +20,7 @@ class CaseRepository: ObservableObject {
     }
     
     func loadData() {
-        var userId = Auth.auth().currentUser?.uid
+        var _ = Auth.auth().currentUser?.uid
         
         db.collection("cases")
             .order(by: "year")

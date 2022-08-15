@@ -67,10 +67,6 @@ struct ScrollingStackModifier: ViewModifier {
 }
 
 struct CardScrollView: View {
-    @State var showDef = false
-    @State var flashcardRotation = 0.0
-    @State var contentRotation = 0.0
-
     init() {
         UITableView.appearance().backgroundColor = .white
     }
@@ -101,26 +97,18 @@ struct CardScrollView: View {
         VStack {
             ZStack {
                 Image("dam-edited")
-                    .opacity(0.3)
-                    .scaledToFit()
-                    .frame(
-                        width: UIScreen.main.bounds.width,
-                        height: UIScreen.main.bounds.width,
-                        alignment: .center
-                    )
+                    .opacity(0.6)
+                    .backgroundImageStyle()
                 VStack {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 5)
-                            .foregroundColor(Color.black)
-                            .opacity(0.65)
-                            .frame(width: 235, height: 45, alignment: .center)
-
-                        Text("EcoJustice Terms")
-                            .kerning(2.0)
-                            .foregroundColor(Color.white)
-                            .font(.title2)
-                    }
-                    .padding(.bottom, 130)
+                    Text("EcoJustice Terms")
+                        .kerning(2.0)
+                        .foregroundColor(Color.white)
+                        .font(.title2)
+                        .background(RoundedRectangle(cornerRadius: 5)
+                            .opacity(0.8)
+                            .frame(width: 235, height: 45)
+                            .foregroundColor(Color.black))
+                        .padding(.bottom, 130)
 
                     HStack(alignment: .center, spacing: 30) {
                         ForEach(cards, id: \.self){ card in
@@ -134,23 +122,21 @@ struct CardScrollView: View {
                 }
                 .padding(.bottom)
 
-                Spacer()
             }
-        }
+            Spacer()
 
-        ZStack {
-            RoundedRectangle(cornerRadius: 3)
-                .foregroundColor(Color.white)
-                .opacity(0.6)
-                .frame(width: 90, height: 30)
             Button("Shuffle") {
                 withAnimation {
                     cards.shuffle()
                 }
             }
-            .foregroundColor(.black)
+            .background(RoundedRectangle(cornerRadius: 3)
+                .frame(width: 90, height: 30)
+                .foregroundColor(Color.black))
+            .foregroundColor(.white)
+            .opacity(0.85)
+            Spacer()
         }
-
     }
     func flip(_ card: Card) {
         if let cardIndex = index(of: card) {
@@ -167,20 +153,16 @@ struct ExtractedCardView: View {
     var cardName = Card(word: .init(), definition: .init()).wordDef
 
     var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 10)
-                .fill(Color.white)
-                .shadow(color: .gray, radius: 10)
-                .frame(width: 300, height: 200, alignment: .center)
-
-            Text(cardName)
-                .kerning(1.0)
-                .font(.headline)
-                .fontWeight(.light)
-                .foregroundColor(.black)
-                .padding()
-                .frame(width: 300, height: 200, alignment: .center)
-                .cornerRadius(10)
-        }
+        Text(cardName)
+            .kerning(1.0)
+            .font(.headline)
+            .fontWeight(.light)
+            .foregroundColor(.black)
+            .padding()
+            .frame(width: 300, height: 200, alignment: .center)
+            .cornerRadius(10)
+            .background(RoundedRectangle(cornerRadius: 10)
+                .foregroundColor(Color.white))
+            .shadow(color: .gray, radius: 10)
     }
 }

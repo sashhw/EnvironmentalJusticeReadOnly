@@ -89,31 +89,29 @@ struct DetailView: View {
                     .animation(.spring())
 
                 HStack(alignment: .center) {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 3)
-                            .foregroundColor(Color.black)
-                            .opacity(0.6)
-                            .frame(width: 55, height: 25)
-
-                        let value = String(caseCellVM.ejCase.year)
-                        Text(value)
-                            .kerning(1.0)
-                            .foregroundColor(.white)
-                            .font(.body)
-                            .fontWeight(.semibold)
-                    }
+                    let value = String(caseCellVM.ejCase.year)
+                    Text(value)
+                        .kerning(1.0)
+                        .foregroundColor(.white)
+                        .font(.body)
+                        .fontWeight(.semibold)
+                        .background(
+                            RoundedRectangle(cornerRadius: 3)
+                                .foregroundColor(Color.black)
+                                .opacity(0.6)
+                                .frame(width: 55, height: 25))
 
                     Text(caseCellVM.ejCase.location)
-                            .kerning(1.0)
-                            .font(.body)
-                            .fontWeight(.light)
-                            .italic()
-                            .padding(.horizontal, 10)
+                        .kerning(1.0)
+                        .font(.body)
+                        .fontWeight(.light)
+                        .italic()
+                        .padding(.horizontal, 10)
                 }
 
                 HStack {
                     Text(caseCellVM.ejCase.info)
-                        .kerning(1.0)
+                        .kerning(0.5)
                         .font(.caption)
                         .multilineTextAlignment(.center)
                         .padding(30)

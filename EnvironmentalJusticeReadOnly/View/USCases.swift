@@ -45,7 +45,7 @@ struct CaseCell: View {
     var body: some View {
         HStack {
             Text(caseCellVM.ejCase.name)
-                .kerning(1.0)
+                .kerning(0.5)
                 .font(.caption)
 
             NavigationLink(destination: DetailView(caseCellVM: caseCellVM)) {

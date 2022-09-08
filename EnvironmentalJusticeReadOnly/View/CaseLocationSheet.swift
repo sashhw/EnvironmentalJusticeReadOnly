@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CaseLocationSheet: View {
     var location: Location
+    @Environment(\.colorScheme) var colorScheme
 
     var body: some View {
         ScrollView {
@@ -17,8 +18,8 @@ struct CaseLocationSheet: View {
                     Text(location.name)
                         .kerning(2.0)
                         .fontWeight(.light)
-                        .font(.system(.caption))
-                        .foregroundColor(.black)
+                        .font(.system(.body))
+                        .foregroundColor(colorScheme == .dark ? .white : .black)
                         .opacity(0.7)
 
                     Spacer()
@@ -39,13 +40,15 @@ struct CaseLocationSheet: View {
                 Text("What came next")
                     .kerning(2.0)
                     .font(.title3)
+                    .lineLimit(2)
                     .padding()
+                
                 Text(location.whatCameNext)
                     .kerning(0.5)
                     .fontWeight(.light)
                     .padding()
                     .font(.system(.callout))
-                    .foregroundColor(.black)
+                    .foregroundColor(colorScheme == .dark ? .white : .black)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 5)
                     .overlay(Color.gray.opacity(0.1))

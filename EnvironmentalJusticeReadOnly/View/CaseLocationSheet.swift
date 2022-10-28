@@ -42,7 +42,7 @@ struct CaseLocationSheet: View {
                     .font(.title3)
                     .lineLimit(2)
                     .padding()
-                
+
                 Text(location.whatCameNext)
                     .kerning(0.5)
                     .fontWeight(.light)
@@ -55,6 +55,7 @@ struct CaseLocationSheet: View {
                     .cornerRadius(5)
                     .padding(.horizontal, 15)
             }
+            .padding()
         }
     }
 }

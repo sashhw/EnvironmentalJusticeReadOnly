@@ -20,6 +20,8 @@ struct NewMapView: View {
         )
     )
     @State var locations = locationsArray
+    @State var selectedLocation: Location?
+    @State var showingAlert = false
     let screenRect = UIScreen.main.bounds
 
     var body: some View {
@@ -40,20 +42,23 @@ struct NewMapView: View {
                             longitude: location.longitude
                         )
                     ) {
-                        NavigationLink {
-                            CaseLocationSheet(location: location)
-
+                        Button {
+                            selectedLocation = location
                         } label: {
                             Text(location.image)
                                 .font(.title)
                         }
+                        .sheet(item: $selectedLocation) { location in
+                            CaseLocationSheet(location: location)
+                        }
+                        .navigationBarBackButtonHidden(true)
                     }
                 }
                 .frame(width: screenRect.width - 20, height: 300, alignment: .center)
                 .cornerRadius(5)
                 Spacer()
-
             }
+
         }
     }
 }

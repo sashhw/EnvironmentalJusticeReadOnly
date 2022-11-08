@@ -101,14 +101,16 @@ struct CardScrollView: View {
                     .backgroundImageStyle()
                 VStack {
                     Text("EcoJustice Terms")
-                        .kerning(2.0)
+                        .kerning(0.5)
                         .foregroundColor(Color.white)
                         .font(.title2)
+                        .fontWeight(.semibold)
                         .background(RoundedRectangle(cornerRadius: 5)
                             .opacity(0.8)
                             .frame(width: 235, height: 45)
                             .foregroundColor(Color.black))
-                        .padding(.bottom, 130)
+                        .padding(.bottom, 110)
+                        .padding(.top, 20)
 
                     HStack(alignment: .center, spacing: 30) {
                         ForEach(cards, id: \.self){ card in
@@ -135,7 +137,7 @@ struct CardScrollView: View {
                 .foregroundColor(Color.black))
             .foregroundColor(.white)
             .opacity(0.85)
-            Spacer()
+            Spacer(minLength: 250)
         }
     }
     func flip(_ card: Card) {

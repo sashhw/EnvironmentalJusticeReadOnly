@@ -19,9 +19,3 @@ extension View {
         modifier(BackgroundImage())
     }
 }
-
-//extension View {
-//    func homeUsingButtonStyle() -> some View {
-//        buttonStyle(HomeButtonStyle())
-//    }
-//}

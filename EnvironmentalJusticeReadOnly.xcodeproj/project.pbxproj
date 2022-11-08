@@ -24,12 +24,13 @@
 		D98B5840268A3C5D00F11DBE /* locationsEJCase.json in Resources */ = {isa = PBXBuildFile; fileRef = D98B583F268A3C5D00F11DBE /* locationsEJCase.json */; };
 		D98B5844268A3D0A00F11DBE /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98B5843268A3D0A00F11DBE /* LocationModel.swift */; };
 		D992347928062C5700926F2E /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D992347828062C5700926F2E /* CardViewModel.swift */; };
+		D993708F2912D23700DB7077 /* InfoPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D993708E2912D23700DB7077 /* InfoPopupView.swift */; };
 		D996921B2880C3E700C6E296 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D996921A2880C3E700C6E296 /* Localizable.strings */; };
 		D99B559726D409EA00773CBE /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99B559626D409EA00773CBE /* CardModel.swift */; };
 		D9AC1EC4268B9FBA0080C9F3 /* CiteSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AC1EC3268B9FBA0080C9F3 /* CiteSheetView.swift */; };
 		D9AED33A2862158000591D6E /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AED3392862158000591D6E /* MapViewModel.swift */; };
 		D9AED33C2862184900591D6E /* NewLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AED33B2862184900591D6E /* NewLocationModel.swift */; };
-		D9BAD44E286A4F0A00ED5B6B /* CaseLocationSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BAD44D286A4F0A00ED5B6B /* CaseLocationSheet.swift */; };
+		D9BAD44E286A4F0A00ED5B6B /* MapLocationModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BAD44D286A4F0A00ED5B6B /* MapLocationModal.swift */; };
 		D9DE909228A55D00006F07C3 /* HomeScreenButtonModifier .swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DE909128A55D00006F07C3 /* HomeScreenButtonModifier .swift */; };
 		D9DE909428A568D9006F07C3 /* BackgroundImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DE909328A568D9006F07C3 /* BackgroundImageModifier.swift */; };
 		D9DE909628A56986006F07C3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DE909528A56986006F07C3 /* Extensions.swift */; };
@@ -43,7 +44,7 @@
 		D9F4AD4A2673C663001FDE22 /* CasesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F4AD492673C663001FDE22 /* CasesModel.swift */; };
 		D9F4AD4C2673C7C5001FDE22 /* CaseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F4AD4B2673C7C5001FDE22 /* CaseListViewModel.swift */; };
 		D9F4AD4E2673C7CE001FDE22 /* CaseCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F4AD4D2673C7CE001FDE22 /* CaseCellViewModel.swift */; };
-		D9F4AD502673D34B001FDE22 /* USCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F4AD4F2673D34B001FDE22 /* USCases.swift */; };
+		D9F4AD502673D34B001FDE22 /* USCasesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F4AD4F2673D34B001FDE22 /* USCasesListView.swift */; };
 		D9F4AD522673D478001FDE22 /* ejDefCitations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F4AD512673D478001FDE22 /* ejDefCitations.swift */; };
 		D9F4AD542673D4A8001FDE22 /* EJTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F4AD532673D4A8001FDE22 /* EJTitleView.swift */; };
 /* End PBXBuildFile section */
@@ -64,12 +65,13 @@
 		D98B583F268A3C5D00F11DBE /* locationsEJCase.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = locationsEJCase.json; sourceTree = "<group>"; };
 		D98B5843268A3D0A00F11DBE /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		D992347828062C5700926F2E /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		D993708E2912D23700DB7077 /* InfoPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPopupView.swift; sourceTree = "<group>"; };
 		D996921A2880C3E700C6E296 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		D99B559626D409EA00773CBE /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardModel.swift; path = EnvironmentalJusticeReadOnly/Model/CardModel.swift; sourceTree = SOURCE_ROOT; };
 		D9AC1EC3268B9FBA0080C9F3 /* CiteSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiteSheetView.swift; sourceTree = "<group>"; };
 		D9AED3392862158000591D6E /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		D9AED33B2862184900591D6E /* NewLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLocationModel.swift; sourceTree = "<group>"; };
-		D9BAD44D286A4F0A00ED5B6B /* CaseLocationSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseLocationSheet.swift; sourceTree = "<group>"; };
+		D9BAD44D286A4F0A00ED5B6B /* MapLocationModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationModal.swift; sourceTree = "<group>"; };
 		D9DE909128A55D00006F07C3 /* HomeScreenButtonModifier .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeScreenButtonModifier .swift"; sourceTree = "<group>"; };
 		D9DE909328A568D9006F07C3 /* BackgroundImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageModifier.swift; sourceTree = "<group>"; };
 		D9DE909528A56986006F07C3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -85,7 +87,7 @@
 		D9F4AD492673C663001FDE22 /* CasesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasesModel.swift; sourceTree = "<group>"; };
 		D9F4AD4B2673C7C5001FDE22 /* CaseListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseListViewModel.swift; sourceTree = "<group>"; };
 		D9F4AD4D2673C7CE001FDE22 /* CaseCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseCellViewModel.swift; sourceTree = "<group>"; };
-		D9F4AD4F2673D34B001FDE22 /* USCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USCases.swift; sourceTree = "<group>"; };
+		D9F4AD4F2673D34B001FDE22 /* USCasesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USCasesListView.swift; sourceTree = "<group>"; };
 		D9F4AD512673D478001FDE22 /* ejDefCitations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ejDefCitations.swift; sourceTree = "<group>"; };
 		D9F4AD532673D4A8001FDE22 /* EJTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EJTitleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -195,12 +197,13 @@
 			isa = PBXGroup;
 			children = (
 				D97E6EBF2805D0DA00AD1CFC /* CardScrollView.swift */,
-				D9BAD44D286A4F0A00ED5B6B /* CaseLocationSheet.swift */,
+				D9BAD44D286A4F0A00ED5B6B /* MapLocationModal.swift */,
 				D9AC1EC3268B9FBA0080C9F3 /* CiteSheetView.swift */,
 				D9F4AD342673C15E001FDE22 /* ContentView.swift */,
+				D993708E2912D23700DB7077 /* InfoPopupView.swift */,
 				D9F4AD532673D4A8001FDE22 /* EJTitleView.swift */,
 				D920B00B281AEE99001EBF82 /* NewMapView.swift */,
-				D9F4AD4F2673D34B001FDE22 /* USCases.swift */,
+				D9F4AD4F2673D34B001FDE22 /* USCasesListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -316,9 +319,10 @@
 				D9DE909228A55D00006F07C3 /* HomeScreenButtonModifier .swift in Sources */,
 				D992347928062C5700926F2E /* CardViewModel.swift in Sources */,
 				D953816726BEF26F001319AC /* DelanoMap.swift in Sources */,
-				D9F4AD502673D34B001FDE22 /* USCases.swift in Sources */,
+				D9F4AD502673D34B001FDE22 /* USCasesListView.swift in Sources */,
 				D97E6EC02805D0DA00AD1CFC /* CardScrollView.swift in Sources */,
-				D9BAD44E286A4F0A00ED5B6B /* CaseLocationSheet.swift in Sources */,
+				D9BAD44E286A4F0A00ED5B6B /* MapLocationModal.swift in Sources */,
+				D993708F2912D23700DB7077 /* InfoPopupView.swift in Sources */,
 				D9F4AD522673D478001FDE22 /* ejDefCitations.swift in Sources */,
 				D9DE909628A56986006F07C3 /* Extensions.swift in Sources */,
 				D9F4AD352673C15E001FDE22 /* ContentView.swift in Sources */,
@@ -475,7 +479,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"EnvironmentalJusticeReadOnly/Preview Content\"";
 				DEVELOPMENT_TEAM = 5C5CMQR2CZ;
 				ENABLE_PREVIEWS = YES;
@@ -509,6 +513,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sasha.EnvironmentalJusticeReadOnly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -522,7 +527,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"EnvironmentalJusticeReadOnly/Preview Content\"";
 				DEVELOPMENT_TEAM = 5C5CMQR2CZ;
 				ENABLE_PREVIEWS = YES;
@@ -532,6 +537,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sasha.EnvironmentalJusticeReadOnly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

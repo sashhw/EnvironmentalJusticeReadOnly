@@ -7,34 +7,40 @@
 import SwiftUI
 import Firebase
 
-struct USCases: View {
+struct USCasesListView: View {
     
     @ObservedObject var caseListVM = CaseListViewModel()
     @State var presentAddNewItem = false
     @State private var showingSheet = false
     
     var body: some View {
-        VStack {
-            List {
-                ForEach(caseListVM.caseCellViewModels) { caseCellVM in
-                    HStack {
-                        Image(caseCellVM.ejCase.photo)
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 60, height: 70)
-                            .cornerRadius(4)
-                        CaseCell(caseCellVM: caseCellVM)
+        NavigationView {
+            VStack(alignment: .leading, spacing: 0) {
+                List {
+                    ForEach(caseListVM.caseCellViewModels) { caseCellVM in
+                        HStack(alignment: .center) {
+                            Image(caseCellVM.ejCase.photo)
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 60, height: 60)
+                                .cornerRadius(8)
+                                .padding(.trailing, 10)
+
+                            CaseCell(caseCellVM: caseCellVM)
+                        }
                     }
                 }
+                .navigationTitle("U.S. Cases")
+                .navigationBarTitleDisplayMode(.inline)
+                .navigationBarBackButtonHidden(true)
             }
-            .padding(.horizontal, -20)
         }
     }
 }
 
 struct USCases_Previews: PreviewProvider {
     static var previews: some View {
-        USCases()
+        USCasesListView()
     }
 }
 
@@ -45,8 +51,10 @@ struct CaseCell: View {
     var body: some View {
         HStack {
             Text(caseCellVM.ejCase.name)
-                .kerning(0.5)
-                .font(.caption)
+                .kerning(0.25)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .font(.subheadline)
+                .frame(width: 200)
 
             NavigationLink(destination: DetailView(caseCellVM: caseCellVM)) {
                 Text("")
@@ -70,15 +78,14 @@ struct DetailView: View {
         ScrollView {
             VStack {
                 Text(caseCellVM.ejCase.name)
-                    .kerning(2.0)
+                    .kerning(1.0)
                     .fontWeight(.semibold)
                     .font(.title2)
                     .multilineTextAlignment(.center)
-                    .padding(.horizontal)
                 
                 Image(caseCellVM.ejCase.photo)
                     .resizable()
-                    .frame(width: 450, height: 300, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 450, height: 300, alignment: .center)
                     .aspectRatio(contentMode: .fill)
                     .cornerRadius(6)
                     .shadow(radius: 10)
@@ -88,10 +95,10 @@ struct DetailView: View {
                     }
                     .animation(.spring())
 
-                HStack(alignment: .center) {
+                HStack(spacing: 30) {
                     let value = String(caseCellVM.ejCase.year)
                     Text(value)
-                        .kerning(1.0)
+                        .kerning(0.5)
                         .foregroundColor(.white)
                         .font(.body)
                         .fontWeight(.semibold)
@@ -102,22 +109,21 @@ struct DetailView: View {
                                 .frame(width: 55, height: 25))
 
                     Text(caseCellVM.ejCase.location)
-                        .kerning(1.0)
+                        .kerning(0.5)
                         .font(.body)
                         .fontWeight(.light)
                         .italic()
-                        .padding(.horizontal, 10)
                 }
+                .padding(.horizontal, 30)
 
-                HStack {
                     Text(caseCellVM.ejCase.info)
-                        .kerning(0.5)
-                        .font(.caption)
+                        .kerning(0.2)
+                        .font(.body)
                         .multilineTextAlignment(.center)
                         .padding(30)
-                }
             }
-            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+            .frame(width: UIScreen.main.bounds.width)
+            .navigationBarBackButtonHidden(true)
         }
     }
 }

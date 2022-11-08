@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CaseLocationSheet: View {
+struct MapLocationModal: View {
     var location: Location
     @Environment(\.colorScheme) var colorScheme
 
@@ -16,7 +16,7 @@ struct CaseLocationSheet: View {
             VStack {
                 HStack {
                     Text(location.name)
-                        .kerning(2.0)
+                        .kerning(1.0)
                         .fontWeight(.light)
                         .font(.system(.body))
                         .foregroundColor(colorScheme == .dark ? .white : .black)
@@ -24,7 +24,7 @@ struct CaseLocationSheet: View {
 
                     Spacer()
                         Text(location.year)
-                            .kerning(2.0)
+                            .kerning(1.0)
                             .fontWeight(.light)
                             .font(.system(.callout))
                             .foregroundColor(.white)
@@ -38,8 +38,9 @@ struct CaseLocationSheet: View {
                 .padding(.bottom, 40)
 
                 Text("What came next")
-                    .kerning(2.0)
+                    .kerning(0.5)
                     .font(.title3)
+                    .fontWeight(.semibold)
                     .lineLimit(2)
                     .padding()
 
@@ -56,6 +57,7 @@ struct CaseLocationSheet: View {
                     .padding(.horizontal, 15)
             }
             .padding()
+            .padding(.top, 20)
         }
     }
 }

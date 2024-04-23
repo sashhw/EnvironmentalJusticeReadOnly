@@ -21,7 +21,7 @@ struct NewMapView: View {
     )
     @State var locations = locationsArray
     @State var selectedLocation: Location?
-    @State var showingAlert = false
+
     let screenRect = UIScreen.main.bounds
 
     var body: some View {

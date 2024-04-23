@@ -42,6 +42,6 @@ extension RandomAccessCollection {
 }
 
 func shuffleTerms() {
-    var cards = CardsList.cards
+    var cards = CardsList().cards
     cards.shuffle()
 }

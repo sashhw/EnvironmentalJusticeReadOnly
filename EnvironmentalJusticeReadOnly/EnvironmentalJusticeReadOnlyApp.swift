@@ -10,7 +10,7 @@ import Firebase
 import UIKit
 
 @main
-struct EnvirontmentalJusticeReadOnly: App {
+struct EnvironmentalJusticeReadOnly: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     

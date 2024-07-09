@@ -6,9 +6,9 @@
 //
 
 import SwiftUI
-import SwiftData
+import Firebase
+import UIKit
 
-@available(iOS 17.0, *)
 @main
 struct EnvironmentalJusticeReadOnly: App {
     
@@ -18,7 +18,6 @@ struct EnvironmentalJusticeReadOnly: App {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(for: Event.self)
     }
 }
 
@@ -30,4 +29,3 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         return true
     }
 }
-

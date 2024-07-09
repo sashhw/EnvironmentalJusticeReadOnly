@@ -1,15 +1,71 @@
 //
-//  CaseDetailView.swift
+//  USCases.swift
 //  EnvironmentalJusticeReadOnly
 //
-//  Created by Sasha on 7/9/24.
+//  Created by Sasha on 6/11/21.
 //
-
 import SwiftUI
+import Firebase
 
-struct CaseDetailView: View {
+struct USCasesListView: View {
     
+    @ObservedObject var caseListVM = CaseListViewModel()
+    @State var presentAddNewItem = false
+    @State private var showingSheet = false
+    
+    var body: some View {
+        NavigationView {
+            VStack(alignment: .leading, spacing: 0) {
+                List {
+                    ForEach(caseListVM.caseCellViewModels) { caseCellVM in
+                        HStack(alignment: .center) {
+                            Image(caseCellVM.ejCase.photo)
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 60, height: 60)
+                                .cornerRadius(8)
+                                .padding(.trailing, 10)
+
+                            CaseCell(caseCellVM: caseCellVM)
+                        }
+                    }
+                }
+                .navigationTitle("U.S. Cases")
+                .navigationBarTitleDisplayMode(.inline)
+                .navigationBarBackButtonHidden(true)
+            }
+        }
+    }
+}
+
+struct USCases_Previews: PreviewProvider {
+    static var previews: some View {
+        USCasesListView()
+    }
+}
+
+struct CaseCell: View {
     @ObservedObject var caseCellVM: CaseCellViewModel
+    @State var ejCase: String = ""
+    
+    var body: some View {
+        HStack {
+            Text(caseCellVM.ejCase.name)
+                .kerning(0.25)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .font(.subheadline)
+                .frame(width: 200)
+
+            NavigationLink(destination: DetailView(caseCellVM: caseCellVM)) {
+                Text("")
+            }
+        }
+    }
+}
+
+struct DetailView: View {
+    
+    @ObservedObject var caseCellVM = CaseCellViewModel(ejCase: Case(name: "", year: 0, info: "", photo: "", location: ""))
     @State var ejCase: String = ""
     @State var presentActionSheet = false
     @ObservedObject var caseListVM = CaseListViewModel()
@@ -71,3 +127,4 @@ struct CaseDetailView: View {
         }
     }
 }
+

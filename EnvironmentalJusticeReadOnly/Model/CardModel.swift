@@ -1,3 +1,10 @@
+//
+//  CardModel.swift
+//  EnvironmentalJusticeReadOnly
+//
+//  Created by Sasha on 8/23/21.
+//
+
 import Foundation
 
 struct Card: Identifiable, Hashable {
@@ -6,11 +13,17 @@ struct Card: Identifiable, Hashable {
     var definition: String
     var selected: Bool = false
     var wordDef: String {
-        selected ? definition : word
+        get {
+            if selected {
+                return "\(definition)"
+            } else {
+                return "\(word)"
+            }
+        }
     }
 
-    mutating func flipFlashcard() {
-        selected.toggle()
+   mutating func flipFlashcard() {
+       selected = true 
     }
 }
 

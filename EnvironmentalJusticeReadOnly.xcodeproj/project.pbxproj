@@ -19,6 +19,9 @@
 		D97E6EC02805D0DA00AD1CFC /* CardScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97E6EBF2805D0DA00AD1CFC /* CardScrollView.swift */; };
 		D98B5840268A3C5D00F11DBE /* locationsEJCase.json in Resources */ = {isa = PBXBuildFile; fileRef = D98B583F268A3C5D00F11DBE /* locationsEJCase.json */; };
 		D98B5844268A3D0A00F11DBE /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98B5843268A3D0A00F11DBE /* LocationModel.swift */; };
+		D98FE92A2A607B5F0059B3A5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D98FE9292A607B5F0059B3A5 /* FirebaseAuth */; };
+		D98FE92C2A607B660059B3A5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D98FE92B2A607B660059B3A5 /* FirebaseFirestore */; };
+		D98FE92E2A607C0F0059B3A5 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = D98FE92D2A607C0F0059B3A5 /* FirebaseFirestoreSwift-Beta */; };
 		D992347928062C5700926F2E /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D992347828062C5700926F2E /* CardViewModel.swift */; };
 		D993708F2912D23700DB7077 /* InfoPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D993708E2912D23700DB7077 /* InfoPopupView.swift */; };
 		D996921B2880C3E700C6E296 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D996921A2880C3E700C6E296 /* Localizable.strings */; };
@@ -118,6 +121,13 @@
 			path = EnvironmentalJusticeReadOnlyTests;
 			sourceTree = "<group>";
 		};
+		D98FE9262A607B0A0059B3A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D9DE908D28A43383006F07C3 /* Legacy */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +165,7 @@
 				D9F808AB2C3DC2FD0010AC30 /* Utilities */,
 				D93E18E6269F802C004AB4D9 /* EnvironmentalJusticeReadOnlyTests */,
 				D9F4AD302673C15E001FDE22 /* Products */,
+				D98FE9262A607B0A0059B3A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -547,7 +558,7 @@
 					"\"${PODS_TARGET_SRCROOT}/Sources/FBLPromises/include\"",
 				);
 				INFOPLIST_FILE = EnvironmentalJusticeReadOnly/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -571,7 +582,7 @@
 				DEVELOPMENT_TEAM = 5C5CMQR2CZ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = EnvironmentalJusticeReadOnly/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

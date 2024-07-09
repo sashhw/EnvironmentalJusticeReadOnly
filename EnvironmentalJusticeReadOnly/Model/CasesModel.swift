@@ -6,16 +6,23 @@
 //
 
 import Foundation
-import Firebase
-import FirebaseFirestoreSwift
+import SwiftData
 
 
-struct Case: Identifiable, Codable {
-    @DocumentID var id: String?
-    var name: String = ""
-    var year: Int = 0
-    var info: String = ""
-    var photo: String = ""
-    var userId: String? = ""
-    var location: String = ""
+@available(iOS 17, *)
+@Model
+class Event {
+    var name: String
+    var year: Int
+    var info: String
+    var photo: String
+    var location: String
+    
+    init(name: String, year: Int, info: String, photo: String, location: String) {
+        self.name = name
+        self.year = year
+        self.info = info
+        self.photo = photo
+        self.location = location
+    }
 }

@@ -9,8 +9,8 @@ import SwiftUI
 
 struct EJTitleView: View {
     var body: some View {
-        Text("Environmental Justice")
-            .font(.system(.title2).weight(.light))
+        Text("EcoJustice")
+            .font(.title2)
             .foregroundColor(.black)
             .padding()
             .opacity(0.85)

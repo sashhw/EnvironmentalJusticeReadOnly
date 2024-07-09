@@ -11,7 +11,7 @@
 	<key>GCM_SENDER_ID</key>
 	<string>524238234245</string>
 	<key>PLIST_VERSION</key>
-	<string>1</string>
+	<string>1.1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.sasha.EnvironmentalJusticeReadOnly</string>
 	<key>PROJECT_ID</key>
@@ -19,15 +19,15 @@
 	<key>STORAGE_BUCKET</key>
 	<string>environmentaljustice-63266.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:524238234245:ios:1db9c0c4927cc1065d3fec</string>
 </dict>

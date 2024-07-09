@@ -32,7 +32,8 @@ struct NewMapView: View {
             VStack {
                 Text("EcoJustice Cases on Map")
                     .font(.title3)
-                    .kerning(2)
+                    .fontWeight(.semibold)
+                    .kerning(0.5)
                     .padding(.bottom, 100)
 
                 Map(coordinateRegion: $region, annotationItems: locations) { location in
@@ -49,9 +50,8 @@ struct NewMapView: View {
                                 .font(.title)
                         }
                         .sheet(item: $selectedLocation) { location in
-                            CaseLocationSheet(location: location)
+                            MapLocationModal(location: location)
                         }
-                        .navigationBarBackButtonHidden(true)
                     }
                 }
                 .frame(width: screenRect.width - 20, height: 300, alignment: .center)

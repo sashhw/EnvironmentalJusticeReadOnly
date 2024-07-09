@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State var flipped = false
     @State var showSheetView = false
-    let usCases = USCases()
+    let usCases = CasesListView()
     let screenRect = UIScreen.main.bounds
     let ejTitleView = EJTitleView()
 
@@ -38,32 +38,7 @@ struct ContentView: View {
                                 }
                                 
                                 if flipped {
-                                    ZStack {
-                                        ScrollView(showsIndicators: false) {
-                                        Text(ejDef)
-                                            .kerning(0.5)
-                                            .font(.system(.body).weight(.light))
-                                            .homeButtonStyle()
-                                        }
-                                        Button {
-                                            flipped.toggle()
-                                        } label: {
-                                            Text("Dismiss")
-                                                .kerning(2.0)
-                                                .fontWeight(.light)
-                                                .font(.caption)
-                                                .bold()
-                                                .foregroundColor(.black)
-                                                .multilineTextAlignment(.center)
-                                                .border(Color.black, width: 0.5)
-                                                .scaleEffect(0.9)
-                                                .cornerRadius(15)
-                                                .padding(.top, 450)
-                                                .padding(.leading, 200)
-                                                .frame(alignment: .bottom)
-                                                .padding(.bottom, 250)
-                                        }
-                                    }
+                                    InfoPopupView()
                                 }
                                 
                                 NavigationLink(destination: CardScrollView()) {

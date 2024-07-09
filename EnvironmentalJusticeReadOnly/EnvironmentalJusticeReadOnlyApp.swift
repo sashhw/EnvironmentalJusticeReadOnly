@@ -10,7 +10,7 @@ import SwiftData
 
 @available(iOS 17.0, *)
 @main
-struct EnvirontmentalJusticeReadOnly: App {
+struct EnvironmentalJusticeReadOnly: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     

@@ -9,6 +9,7 @@ import Foundation
 import FirebaseFirestore
 import FirebaseFirestoreSwift
 import Firebase
+import FirebaseAuth
 
 class CaseRepository: ObservableObject {
     let db = Firestore.firestore()

@@ -14,7 +14,7 @@ struct MainContentView: View {
     let usCases = USCasesListView()
     let ejTitleView = EJTitleView()
     let cardScrollView = VocabCardScrollView()
-    let newMapView = NewMapView()
+    let newMapView = MapView()
     
     var body: some View {
         VStack {

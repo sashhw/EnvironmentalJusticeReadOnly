@@ -26,6 +26,7 @@ struct HomeButtonStyle: ButtonStyle {
             .padding(.horizontal, 30.0)
             .padding(15)
             .frame(alignment: .center)
+            .shadow(radius: 10)            
     }
 }
 

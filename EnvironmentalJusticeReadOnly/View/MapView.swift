@@ -8,7 +8,7 @@
 import SwiftUI
 import MapKit
 
-struct NewMapView: View {
+struct MapView: View {
     @State var showAnnotation = false
     @State var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(
@@ -65,6 +65,6 @@ struct NewMapView: View {
 
 struct MapWithCaseLocations_Previews: PreviewProvider {
     static var previews: some View {
-        NewMapView()
+        MapView()
     }
 }

@@ -5,21 +5,28 @@
 //  Created by Sasha Walkowski on 8/15/22.
 //
 
-import Foundation
 import SwiftUI
 
 struct HomeButtonStyle: ButtonStyle {
+    let foregroundColor: Color
+    let backgroundColor: Color
+
+    init(foregroundColor: Color, backgroundColor: Color) {
+        self.foregroundColor = foregroundColor
+        self.backgroundColor = backgroundColor
+    }
+
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .font(.system(.headline).weight(.light))
-            .foregroundColor(.black)
-            .padding()
-            .background(Color.white)
+            .foregroundColor(foregroundColor)
+            .background(backgroundColor)
             .clipShape(RoundedRectangle(cornerRadius: 7))
-            .scaleEffect(0.9)
-            .multilineTextAlignment(.center)
             .opacity(0.85)
             .padding(.horizontal, 30.0)
-            .frame(width: UIScreen.main.bounds.width-20, alignment: .center)
+            .padding(15)
+            .frame(alignment: .center)
     }
 }
+
+

@@ -14,12 +14,17 @@
 		D917DC562C3DE009009D4D2E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D917DC552C3DE009009D4D2E /* FirebaseFirestore */; };
 		D917DC582C3DE15A009D4D2E /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D917DC572C3DE15A009D4D2E /* FirebaseFirestoreSwift */; };
 		D917DC5A2C3DE2B6009D4D2E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D917DC592C3DE2B6009D4D2E /* FirebaseAuth */; };
+		D917DC5D2C3DE753009D4D2E /* FlashCardScrollModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D917DC5C2C3DE753009D4D2E /* FlashCardScrollModifier.swift */; };
+		D917DC5F2C3DE791009D4D2E /* VocabCardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D917DC5E2C3DE791009D4D2E /* VocabCardComponent.swift */; };
+		D917DC622C3E17C1009D4D2E /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D917DC612C3E17C1009D4D2E /* Data.swift */; };
+		D917DC652C3EB134009D4D2E /* ContentViewBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = D917DC642C3EB133009D4D2E /* ContentViewBody.swift */; };
+		D917DC672C3EB160009D4D2E /* HomeBackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D917DC662C3EB160009D4D2E /* HomeBackgroundImageView.swift */; };
 		D920B00C281AEE99001EBF82 /* NewMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D920B00B281AEE99001EBF82 /* NewMapView.swift */; };
 		D953816726BEF26F001319AC /* DelanoMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953816626BEF26F001319AC /* DelanoMap.swift */; };
 		D953816926BEF582001319AC /* HawkinsMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953816826BEF582001319AC /* HawkinsMap.swift */; };
 		D953816B26BF0170001319AC /* WarrenMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953816A26BF0170001319AC /* WarrenMap.swift */; };
 		D953816D26BF4F74001319AC /* NorthRiverMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953816C26BF4F74001319AC /* NorthRiverMap.swift */; };
-		D97E6EC02805D0DA00AD1CFC /* CardScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97E6EBF2805D0DA00AD1CFC /* CardScrollView.swift */; };
+		D97E6EC02805D0DA00AD1CFC /* VocabCardScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97E6EBF2805D0DA00AD1CFC /* VocabCardScrollView.swift */; };
 		D98B5840268A3C5D00F11DBE /* locationsEJCase.json in Resources */ = {isa = PBXBuildFile; fileRef = D98B583F268A3C5D00F11DBE /* locationsEJCase.json */; };
 		D98B5844268A3D0A00F11DBE /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98B5843268A3D0A00F11DBE /* LocationModel.swift */; };
 		D992347928062C5700926F2E /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D992347828062C5700926F2E /* CardViewModel.swift */; };
@@ -53,6 +58,11 @@
 		D916027526B9AEB20069CE5E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		D916027726B9AF380069CE5E /* LosAlMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LosAlMapView.swift; sourceTree = "<group>"; };
 		D916027926B9C3920069CE5E /* DelanoPic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelanoPic.swift; sourceTree = "<group>"; };
+		D917DC5C2C3DE753009D4D2E /* FlashCardScrollModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardScrollModifier.swift; sourceTree = "<group>"; };
+		D917DC5E2C3DE791009D4D2E /* VocabCardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabCardComponent.swift; sourceTree = "<group>"; };
+		D917DC612C3E17C1009D4D2E /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		D917DC642C3EB133009D4D2E /* ContentViewBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewBody.swift; sourceTree = "<group>"; };
+		D917DC662C3EB160009D4D2E /* HomeBackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBackgroundImageView.swift; sourceTree = "<group>"; };
 		D920B00B281AEE99001EBF82 /* NewMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMapView.swift; sourceTree = "<group>"; };
 		D93E18E7269F802C004AB4D9 /* EnvironmentalJusticeReadOnlyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentalJusticeReadOnlyTests.swift; sourceTree = "<group>"; };
 		D93E18E9269F802C004AB4D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,7 +70,7 @@
 		D953816826BEF582001319AC /* HawkinsMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HawkinsMap.swift; sourceTree = "<group>"; };
 		D953816A26BF0170001319AC /* WarrenMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarrenMap.swift; sourceTree = "<group>"; };
 		D953816C26BF4F74001319AC /* NorthRiverMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthRiverMap.swift; sourceTree = "<group>"; };
-		D97E6EBF2805D0DA00AD1CFC /* CardScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardScrollView.swift; sourceTree = "<group>"; };
+		D97E6EBF2805D0DA00AD1CFC /* VocabCardScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabCardScrollView.swift; sourceTree = "<group>"; };
 		D98B583F268A3C5D00F11DBE /* locationsEJCase.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = locationsEJCase.json; sourceTree = "<group>"; };
 		D98B5843268A3D0A00F11DBE /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		D992347828062C5700926F2E /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
@@ -105,6 +115,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D917DC5B2C3DE6F5009D4D2E /* VocabCardView */ = {
+			isa = PBXGroup;
+			children = (
+				D97E6EBF2805D0DA00AD1CFC /* VocabCardScrollView.swift */,
+				D917DC5E2C3DE791009D4D2E /* VocabCardComponent.swift */,
+			);
+			path = VocabCardView;
+			sourceTree = "<group>";
+		};
+		D917DC602C3E1796009D4D2E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D9F4AD412673C28C001FDE22 /* GoogleService-Info.plist */,
+				D996921A2880C3E700C6E296 /* Localizable.strings */,
+				D9F4AD512673D478001FDE22 /* ejDefCitations.swift */,
+				D98B583F268A3C5D00F11DBE /* locationsEJCase.json */,
+				D917DC612C3E17C1009D4D2E /* Data.swift */,
+				D9F4AD362673C161001FDE22 /* Assets.xcassets */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D917DC632C3E212B009D4D2E /* HomeViews */ = {
+			isa = PBXGroup;
+			children = (
+				D9AC1EC3268B9FBA0080C9F3 /* CiteSheetView.swift */,
+				D9F4AD342673C15E001FDE22 /* ContentView.swift */,
+				D917DC642C3EB133009D4D2E /* ContentViewBody.swift */,
+				D917DC662C3EB160009D4D2E /* HomeBackgroundImageView.swift */,
+			);
+			path = HomeViews;
+			sourceTree = "<group>";
+		};
 		D93E18E6269F802C004AB4D9 /* EnvironmentalJusticeReadOnlyTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +186,7 @@
 				D9DE909528A56986006F07C3 /* Extensions.swift */,
 				D9DE909728AAADF5006F07C3 /* Home-ButtonStyle.swift */,
 				D9DE909328A568D9006F07C3 /* BackgroundImageModifier.swift */,
+				D917DC5C2C3DE753009D4D2E /* FlashCardScrollModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -168,17 +212,16 @@
 		D9F4AD312673C15E001FDE22 /* EnvironmentalJusticeReadOnly */ = {
 			isa = PBXGroup;
 			children = (
-				D9F4AD362673C161001FDE22 /* Assets.xcassets */,
-				D9F4AD322673C15E001FDE22 /* EnvironmentalJusticeReadOnlyApp.swift */,
-				D9F4AD412673C28C001FDE22 /* GoogleService-Info.plist */,
 				D9F4AD3B2673C161001FDE22 /* Info.plist */,
-				D9DE908D28A43383006F07C3 /* Legacy */,
-				D9DE909028A55CA8006F07C3 /* Modifiers */,
+				D9F4AD322673C15E001FDE22 /* EnvironmentalJusticeReadOnlyApp.swift */,
 				D9F4AD462673C61A001FDE22 /* Model */,
-				D9F4AD382673C161001FDE22 /* Preview Content */,
 				D9F4AD432673C60A001FDE22 /* Repository */,
 				D9F4AD442673C60E001FDE22 /* View */,
 				D9F4AD452673C617001FDE22 /* ViewModel */,
+				D9DE909028A55CA8006F07C3 /* Modifiers */,
+				D917DC602C3E1796009D4D2E /* Utilities */,
+				D9DE908D28A43383006F07C3 /* Legacy */,
+				D9F4AD382673C161001FDE22 /* Preview Content */,
 			);
 			path = EnvironmentalJusticeReadOnly;
 			sourceTree = "<group>";
@@ -202,10 +245,9 @@
 		D9F4AD442673C60E001FDE22 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D97E6EBF2805D0DA00AD1CFC /* CardScrollView.swift */,
+				D917DC632C3E212B009D4D2E /* HomeViews */,
+				D917DC5B2C3DE6F5009D4D2E /* VocabCardView */,
 				D9BAD44D286A4F0A00ED5B6B /* MapLocationModal.swift */,
-				D9AC1EC3268B9FBA0080C9F3 /* CiteSheetView.swift */,
-				D9F4AD342673C15E001FDE22 /* ContentView.swift */,
 				D993708E2912D23700DB7077 /* InfoPopupView.swift */,
 				D9F4AD532673D4A8001FDE22 /* EJTitleView.swift */,
 				D920B00B281AEE99001EBF82 /* NewMapView.swift */,
@@ -231,10 +273,7 @@
 				D9F4AD492673C663001FDE22 /* CasesModel.swift */,
 				D98B5843268A3D0A00F11DBE /* LocationModel.swift */,
 				D9AED33B2862184900591D6E /* NewLocationModel.swift */,
-				D98B583F268A3C5D00F11DBE /* locationsEJCase.json */,
 				D99B559626D409EA00773CBE /* CardModel.swift */,
-				D9F4AD512673D478001FDE22 /* ejDefCitations.swift */,
-				D996921A2880C3E700C6E296 /* Localizable.strings */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -325,7 +364,7 @@
 				D992347928062C5700926F2E /* CardViewModel.swift in Sources */,
 				D953816726BEF26F001319AC /* DelanoMap.swift in Sources */,
 				D9F4AD502673D34B001FDE22 /* USCasesListView.swift in Sources */,
-				D97E6EC02805D0DA00AD1CFC /* CardScrollView.swift in Sources */,
+				D97E6EC02805D0DA00AD1CFC /* VocabCardScrollView.swift in Sources */,
 				D9BAD44E286A4F0A00ED5B6B /* MapLocationModal.swift in Sources */,
 				D993708F2912D23700DB7077 /* InfoPopupView.swift in Sources */,
 				D9F4AD522673D478001FDE22 /* ejDefCitations.swift in Sources */,
@@ -334,6 +373,7 @@
 				D98B5844268A3D0A00F11DBE /* LocationModel.swift in Sources */,
 				D916027426B9AD5A0069CE5E /* MainMapView.swift in Sources */,
 				D9DE909428A568D9006F07C3 /* BackgroundImageModifier.swift in Sources */,
+				D917DC622C3E17C1009D4D2E /* Data.swift in Sources */,
 				D9F4AD332673C15E001FDE22 /* EnvironmentalJusticeReadOnlyApp.swift in Sources */,
 				D9F4AD542673D4A8001FDE22 /* EJTitleView.swift in Sources */,
 				D916027826B9AF380069CE5E /* LosAlMapView.swift in Sources */,
@@ -343,14 +383,18 @@
 				D953816B26BF0170001319AC /* WarrenMap.swift in Sources */,
 				D920B00C281AEE99001EBF82 /* NewMapView.swift in Sources */,
 				D916027A26B9C3920069CE5E /* DelanoPic.swift in Sources */,
+				D917DC5F2C3DE791009D4D2E /* VocabCardComponent.swift in Sources */,
+				D917DC652C3EB134009D4D2E /* ContentViewBody.swift in Sources */,
 				D9AC1EC4268B9FBA0080C9F3 /* CiteSheetView.swift in Sources */,
 				D9DE909828AAADF5006F07C3 /* Home-ButtonStyle.swift in Sources */,
+				D917DC672C3EB160009D4D2E /* HomeBackgroundImageView.swift in Sources */,
 				D953816926BEF582001319AC /* HawkinsMap.swift in Sources */,
 				D9F4AD4C2673C7C5001FDE22 /* CaseListViewModel.swift in Sources */,
 				D9F4AD4A2673C663001FDE22 /* CasesModel.swift in Sources */,
 				D953816D26BF4F74001319AC /* NorthRiverMap.swift in Sources */,
 				D9F4AD482673C640001FDE22 /* CaseRepositoryTwo.swift in Sources */,
 				D916027626B9AEB20069CE5E /* CardView.swift in Sources */,
+				D917DC5D2C3DE753009D4D2E /* FlashCardScrollModifier.swift in Sources */,
 				D9AED33A2862158000591D6E /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

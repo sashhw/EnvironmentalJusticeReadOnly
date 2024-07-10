@@ -5,43 +5,29 @@
 //  Created by Sasha Walkowski on 4/12/22.
 //
 
-import Foundation
+import SwiftUI
 
-struct NoteCardViewModel<Base: RandomAccessCollection>: RandomAccessCollection {
+class VocabCardViewModel: ObservableObject {
+    @Published var cards: [Card]
+    @Published var flippedCards: Set<UUID> = []
 
-    typealias Element = (index: Index, element: Base.Element)
-
-    typealias Index = Base.Index
-
-    let base: Base
-
-    var startIndex: Index { base.startIndex }
-    var endIndex: Index { base.endIndex }
-
-    func index(after i: Index) -> Index {
-        base.index(after: i)
+    init(cards: [Card] = terms) {
+        self.cards = cards
     }
 
-    func index(before i: Index) -> Index {
-        base.index(before: i)
+    func shuffleCards() {
+        cards.shuffle()
     }
 
-    func index(_ i: Index, offsetBy distance: Int) -> Index {
-        base.index(i, offsetBy: distance)
+    func flipCard(_ card: Card) {
+        if flippedCards.contains(card.id) {
+            flippedCards.remove(card.id)
+        } else {
+            flippedCards.insert(card.id)
+        }
     }
 
-    subscript(position: Index) -> Element {
-        (index: position, element: base[position])
+    func isCardFlipped(_ card: Card) -> Bool {
+        flippedCards.contains(card.id)
     }
-}
-
-extension RandomAccessCollection {
-    func indexed() -> NoteCardViewModel<Self> {
-        NoteCardViewModel(base: self)
-    }
-}
-
-func shuffleTerms() {
-    var cards = CardsList().cards
-    cards.shuffle()
 }
